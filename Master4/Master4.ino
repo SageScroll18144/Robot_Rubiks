@@ -72,6 +72,7 @@ void loop()
         spinh(5,'R');
       }
     }
+    
     else if(motor == "end"){
       Wire.write(2);//envia um byte
       Wire.endTransmission();
@@ -87,11 +88,11 @@ void loop()
 void spinh(int motor, char sentido){
   //sentido horario
   if(sentido == 'R'){
-    motores[motor].step(-525);
+    motores[motor].step(-600);
   }
   //sentido anti-horario
   else if(sentido == 'L'){
-    motores[motor].step(525);
+    motores[motor].step(600);
   }
   delay(500);
 }
