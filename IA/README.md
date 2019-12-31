@@ -12,8 +12,24 @@ Este código resolve o cubo mágico apenas para casos clássicos, tais como o Xa
 Está classe contêm a implementação do algoritmo de Fridrich com os casos F2L, OLL e PLL.
 
 - IABasic
-Podemos definir este arquivo como o Main, nele foi escrito a implementação do algoritmo da Cruz Branca e é onde ocorre toda manipulação inicial do Cubo, desde a captura das faces até o envio dos movimentos para um arquivo .txt
+Podemos definir este arquivo como o Main, nele foi escrito a implementação do algoritmo da Cruz Branca e é onde ocorre toda manipulação inicial do Cubo, desde a captura das faces até o envio dos movimentos para um arquivo .txt.
 
+### Também apresenta os seguintes métodos:
+
+- int elementoAdjacente(int posElemento, Movimento f)
+Retorna o elemento(cubinho) Adjacente do elemento informado.
+
+- int FaceAdjacente(int posElemento)
+Retorna a Face Adjacente do elemento(cubinho) informado.
+
+- void alinhamento(Movimento f)
+Alinha os cantos brancos. Cubinho Branco-Azul fica debaixo da face Azul; Cubinho Branco-Laranja fica debaixo da face Laranja; Cubinho Branco-Vermelho fica debaixo da face Vermelha; Cubinho Branco-Verde fica debaixo da face Verde.
+
+- int prox(int pos)
+
+(img)
+
+A primeira etapa da Cruz Branca é colocar no lugar as peças das posições 1, 5, 7 e 3. Após colocar a peça no lugar o computador precisa saber qual será a próxima para não se perde na resolução. Informando a posição do atual elemento que acabou de ser colocado no lugar, este método retorna a posição do próximo canto para ser colocado o próximo elemento. 
 
 ## move
 Nesta pasta encontramos apenas uma classe chamada Movimento. Aqui é gerado o emulador do Cubo, apresentando o seu desenho através de um array bi-dimensional e contendo os seguintes métodos para a manipulação do objeto:
@@ -34,10 +50,10 @@ Realiza os seguintes giros:
 Retorna um ArrayList do tipo String apresentando todos os movimentos apresentados desde o início até o fim dos movimentos.
 
 - String indexof(int cubinho , int adjacente)
-Retorna uma String com um texto informando a posição de algum cubinho que está presente em alguma canto do Cubo.
+Retorna uma String com um texto informando a posição de algum cubinho que está presente em algum dos cantos do Cubo.
 
 - String indexof(int cubinho, int adjacente_cima, int adjacente_ao_lado)
-Retorna uma String com um texto informando a posição de algum cubinho que está presente em alguma quina do Cubo.
+Retorna uma String com um texto informando a posição de algum cubinho que está presente em alguma das quinas do Cubo.
 
 - String getPos(int face, int posicao)
 Retorna uma String com um texto informando a cor do cubinho que está em determinada face e posição.
@@ -49,7 +65,10 @@ Deve ser chamado após o último movimento, pois indica que não há mais nenhum
 Gira o cubo no eixo Y positivo. 
 
 ## communication
+Nesta pasta está contido a classe Writer que apresenta um único método estático chamado writer que envia os movimentos para um arquivo .txt
 
 ## test
+Apresenta apenas arquivos de testes.
 
 ## cam
+Apresenta arquivos para captura das faces através de uma câmera(Obs.: Ainda não finalizado).
