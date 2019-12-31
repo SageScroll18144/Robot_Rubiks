@@ -25,13 +25,20 @@ public class Fridrich {
 	Movimento m = new Movimento(cube);
 	
 	/*
-	 * OBS.: A COR DOS CUBINHOS NÃO VAI MUDAR, O QUE MUDA APENAS É O EIXO DO CUBO
+	 * OBS.: A COR DOS CUBINHOS NÃO MUDA. O QUE MUDA APENAS É O EIXO DO CUBO
 	 * 
 	 * 
 	 */
 	
 	
 	public void F2L() {
+		
+		/*
+		 * OBS.: PARA OS CENTROS TROCADOS(FACES FRONTAIS), ADAPTAR O MOVIMENTO 
+		 * 
+		 * 
+		 */
+		
 		//Dd1
 		if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
