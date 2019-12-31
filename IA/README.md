@@ -38,7 +38,7 @@ private int prox(int pos);
 ```
 
 ![Screenshot](prox.jpeg)
-**_ Elementos da Face_**
+**_Posição dos elementos da Face_**
 
 - A primeira etapa da Cruz Branca é colocar no lugar as peças das posições 1, 5, 7 e 3. Após colocar a peça no lugar o computador precisa saber qual será a próxima para não se perde na resolução. Informando a posição do atual elemento que acabou de ser colocado no lugar, este método retorna a posição do próximo canto para ser colocado o próximo elemento. 
 
