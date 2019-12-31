@@ -56,6 +56,6 @@ O circuito é bem simples, sendo composto apenas por seis motores de passo. Cada
 - (x12) Abraçadeiras de Nylon.
 - (x6) Blocos retangulares impressos em impressora 3D de 2,5 cm X 1  cm X 1 cm. 
 
-### O CUBO
+### O Cubo
 
 O modelo do Cubo é o ShengShou Cube 3x3x3. No centro de cada face foi colado quadrados vazados de mesmo tamanho da peça central, assumindo o papel de trasmissão do motor para o Cubo.
