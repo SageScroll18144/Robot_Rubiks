@@ -1,5 +1,5 @@
 # Robot_Rubiks
-Robô que resolve o cubo mágico. Este projeto foi desenvolvido para a P.D. Física e Tecnologia do 9º ensino fundamental do ano de 2018.
+Robô que resolve o cubo mágico. Este projeto foi desenvolvido para a P.D. Física e Tecnologia do 9º ensino fundamental do ano de 2018. No ano de 2020 pretendo dar seguimento no projeto, apenas para aprimorá-lo, assim fazendo uma nova versão.
 
 ## Robô
 ![Screenshot](robot_cube.jpeg)
@@ -40,3 +40,22 @@ Após o envio dos movimentos por um arquivo .txt um arquivo escrito em Python fa
 ## Comandos da movimentação
 
 O Arduino após a leitura envia o comando de giro para o respectivo motor de passo indicando o sentido de rotação. Este arquivo pode ser encontrado na pasta 'Master4'.
+
+## Circuito elétrico
+
+O circuito é bem simples, sendo composto apenas por seis motores de passo. Cada motor é atuado pelo drive ULN2003 e recebe o comando de um Arduino Mega 2560. Para implentar a webcam, será colocado um Raspberry Pi 3.
+
+## Estrutura
+
+### A estrutura do robô é composta pela seguinte lista:
+
+- 1,80 metro de cano PVC de 20mm.
+- (x8) Joelhos de 20mm.
+- (x2) Cruz de 25mm.
+- (x8) Redutores de cano 25mm - 20mm.
+- (x12) Abraçadeiras de Nylon.
+- (x6) Blocos retangulares impressos em impressora 3D de 2,5 cm X 1  cm X 1 cm. 
+
+### O CUBO
+
+O modelo do Cubo é o ShengShou Cube 3x3x3. No centro de cada face foi colado quadrados vazados de mesmo tamanho da peça central, assumindo o papel de trasmissão do motor para o Cubo.
