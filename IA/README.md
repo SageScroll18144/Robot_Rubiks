@@ -36,7 +36,6 @@ private void alinhamento(Movimento f);
 ```
 private int prox(int pos);
 ```
-
 ![Screenshot](prox.jpeg)
 **_Posição dos elementos da Face_**
 
@@ -59,10 +58,18 @@ public void print();
 public void spinRightFront(int face);
 ```
 - Realiza os seguintes giros:
+
+![Screenshot](MR.png)
+
+
 ```
 public void spinLeftBack(int face);
 ```
--Realiza os seguintes giros:
+- Realiza os seguintes giros:
+
+![Screenshot](ML.png)
+
+##### Neste projeto a String que representa o movimento segue a seguinte estrutura: FACE + SENTIDO_DO_MOVIMENTO. 'FACE' pode assumir como valor os elementos pertencentes ao conjunto {0,1,2,3,4,5}. 'SENTIDO_DO_MOVIMENTO' tem como valor R e L para movimentos realizados pelos respectivos métodos _spinRightFront(int face);_ e _spinLeftBack(int face);_ citando anteriormente.
 
 ```
 public ArrayList<String> getMove();
