@@ -58,4 +58,4 @@ O circuito é bem simples, sendo composto apenas por seis motores de passo. Cada
 
 ### O Cubo
 
-O modelo do Cubo é o ShengShou Cube 3x3x3. No centro de cada face foi colado quadrados vazados de mesmo tamanho da peça central, assumindo o papel de trasmissão do motor para o Cubo.
+O modelo do Cubo é o ShengShou Cube 3x3x3. No centro de cada face foi colado quadrados vazados de mesmo tamanho da peça central, assumindo o papel de transmissão do motor para o Cubo.
