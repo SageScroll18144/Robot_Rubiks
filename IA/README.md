@@ -109,6 +109,49 @@ public void moveAxisY();
 
 - Gira o cubo no eixo Y positivo. 
 
+## language
+Contém a classe Translate e ela apresenta os seguintes métodos:
+
+```
+private String TranslateToComputer(String moving);
+
+```
+- Método que faz a tradução da notação do Cubo mágico para a notação deste projeto.
+```
+private String TranslateToCube(String moving);
+
+```
+- Método que faz a tradução da notação do computador para a notação do Cubo mágico.
+```
+private void putElementInAListToComputer(String moving);
+
+```
+- Põe o elemento traduzido da notação do Cubo mágico para a notação do computador em uma lista. 
+```
+private void putElementInAListToCube(String moving);
+
+```
+- Põe o elemento traduzido da notação do computador para a notação do Cubo mágico em uma lista.
+```
+public String getTranslationToComputer(String moving);
+
+```
+- Captura a tradução do elemento atual para a linguagem do computador. 
+```
+public String getTranslationToCube(String moving);
+
+```
+- Captura a tradução do elemento atual para a linguagem do Cubo mágico. 
+```
+public ArrayList<String> getMoveToComputer();
+
+```
+- Captura todos os movimentos na notação do computador.
+```
+public ArrayList<String> getMoveToCube();
+```
+- Captura todos os movimentos na notação do Cubo mágico.
+
 ## communication
 Nesta pasta está contido a classe Writer que apresenta um único método estático chamado writer que envia os movimentos para um arquivo .txt
 
