@@ -110,7 +110,7 @@ public void moveAxisY();
 - Gira o cubo no eixo Y positivo. 
 
 ## language
-Contém a classe Translate e ela apresenta os seguintes métodos:
+Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
 
 ```
 private String TranslateToComputer(String moving);
