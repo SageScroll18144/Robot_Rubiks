@@ -10,7 +10,7 @@ A inteligência artificial e o emulador do cubo para a realização dos moviment
 
 ### Input
 
-O Input do código no momento está sendo feito pelo terminal, entretando será implementado uma webcam para capturar as cores da face do cubo, para a realização desse feito utilizarei a biblioteca de visão computacional OpenCV.
+O Input do código no momento está sendo feito pelo terminal, entretando será implementado uma webcam para capturar as cores da face do cubo, para a realização desse feito utilizarei a biblioteca de visão computacional OpenCV(A implentação deste código está na pasta 'Input').
 
 
 #### Faces
