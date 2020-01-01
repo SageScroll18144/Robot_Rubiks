@@ -146,8 +146,10 @@ public ArrayList<String> getMoveToCube();
 - Captura todos os movimentos na notação do Cubo mágico.
 
 ## communication
-Nesta pasta está contido a classe Writer que apresenta um único método estático chamado writer que envia os movimentos para um arquivo .txt
-
+Nesta pasta está contido a classe Writer que apresenta um único método estático chamado writer que recebe como argumentos um ArrayList correspondente aos movimentos realizados e envia os movimentos para um arquivo .txt
+```
+public static void writer(ArrayList<String> moves);
+```
 ## test
 Apresenta apenas arquivos de testes.
 
