@@ -48,6 +48,8 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 8).charAt(m.getPos(3, 8).length()-1))) == 5 
 				) {
 				//R U' R' Dw R' U2 R U2' R' U R
+				String[] solver = {"R", "U'", "R'", "Dw", "R'", "U2", "R", "U2'", "R'", "U", "R"};
+				
 		}//Dd2	
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
@@ -64,6 +66,8 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 8).charAt(m.getPos(3, 8).length()-1))) == 5 				
 				) {
 				//U R U' R' Dw' L' U L
+				String[] solver = {"U", "R", "U'"," R'", "Dw'", "L'", "U", "L"};
+			
 		}//Dd3 CENTRO TROCADO
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
@@ -80,7 +84,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(5, 3).charAt(m.indexof(5, 3).length()-1)) == 1	 				
 				) {		
 				//U' L' U L Dw R U' R'
-			
+				String[] solver = {"U'", "L'", "U", "L", "Dw", "R", "U'", "R'"};
 		}//Fd1
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
