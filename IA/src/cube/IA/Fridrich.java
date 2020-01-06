@@ -7,18 +7,11 @@ public class Fridrich {
 	private int[][] cube = new int[6][9];
 	
 	public Fridrich(int[][] cube) {
-		int j = 0, i = 0;
-		while(j<(cube.length)){
-	        for (int var : cube[j]) {
-	            this.cube[j][i] = var;
-	            i++;
-	            if(i>8){
-	                i = 0;
-	                j++;
-	                break;
-	            }
-	        }
-	    }
+		for (int i = 0; i < cube.length; i++) {
+			for (int j = 0; j < cube[i].length; j++) {
+				this.cube[i][j] = cube[i][j]; 
+			}
+		}
 	}
 	
 	// .... APLICAR A TROCA DE EIXO .....
