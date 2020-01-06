@@ -42,6 +42,20 @@ public class Translate {
 	public String getTranslationToCube(String moving) {
 		return TranslateToCube(moving);
 	}
+	public ArrayList<String> getTranslationToComputer(ArrayList<String> moving) {
+		ArrayList<String> movingNow = new ArrayList<String>();
+		for (String string : moving) {
+			movingNow.add(TranslateToComputer(string));
+		}		
+		return movingNow;
+	}
+	public ArrayList<String> getTranslationToCube(ArrayList<String> moving) {
+		ArrayList<String> movingNow = new ArrayList<String>();
+		for (String string : moving) {
+			movingNow.add(TranslateToCube(string));
+		}		
+		return movingNow;
+	}
 	public ArrayList<String> getMoveToComputer(){
     	return moveComputer;
     }
