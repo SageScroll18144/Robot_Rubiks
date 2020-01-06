@@ -137,6 +137,14 @@ public String getTranslationToCube(String moving);
 ```
 - Captura a tradução do elemento atual para a linguagem do Cubo mágico. 
 ```
+public ArrayList<String> getTranslationToComputer(ArrayList<String> moving);
+```
+- Captura a tradução de um ArrayList para a linguagem do computador. 
+```
+public ArrayList<String> getTranslationToCube(ArrayList<String> moving);
+```
+- Captura a tradução de um ArrayList para a linguagem do Cubo mágico.  
+```
 public ArrayList<String> getMoveToComputer();
 ```
 - Captura todos os movimentos na notação do computador.
