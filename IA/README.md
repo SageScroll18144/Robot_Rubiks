@@ -11,7 +11,7 @@ Este código resolve o cubo mágico apenas para casos clássicos, tais como o Xa
 
 - Fridrich:
 
-Está classe contêm a implementação do algoritmo de Fridrich com os casos F2L, OLL e PLL.
+Está classe contêm a implementação do algoritmo de Fridrich com os casos F2L, OLL e PLL. A explicação do algoritmo pode ser encontrado no link a seguir: http://www.cubovelocidade.com.br/tutoriais/cubo-magico-avancado-apostila-metodo-fridrich.pdf 
 
 - IABasic:
 
@@ -46,7 +46,6 @@ private int prox(int pos);
 
 ## move
 Nesta pasta encontramos apenas uma classe chamada Movimento. Aqui é gerado o emulador do Cubo, apresentando o seu desenho através de um array bi-dimensional, analogo as seguintes imagens:
-
 
 ![Screenshot](fsbf.png)
 
@@ -113,7 +112,6 @@ public void moveAxisY();
 ```
 
 - Gira o cubo no eixo Y positivo. 
-
 
 ## language
 Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
