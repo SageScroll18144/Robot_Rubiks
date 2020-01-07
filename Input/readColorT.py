@@ -11,8 +11,12 @@ while(True):
  	
     #hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    gauss = cv2.GaussianBlur(gray, (3,3), 0)
+    gauss = cv2.GaussianBlur(gray, (3, 3), 0)
     segmentationCanny = cv2.Canny(gauss, 20, 40)
     
+    kernel = np.ones((3, 3), np.uint8)
+    dilate = cv2.dilate(segmentationCanny, kernel, iterations=2)
+
+
 cam.release()
 cv2.destroyWindow(name) 
