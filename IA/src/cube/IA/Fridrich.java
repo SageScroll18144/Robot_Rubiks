@@ -771,6 +771,8 @@ public class Fridrich {
 	 * Terminando F2L
 	 * 
 	 */
-
+	public void OLL() {
+		//olhando para a face de cima(amarela)
+	}
 	
 }
