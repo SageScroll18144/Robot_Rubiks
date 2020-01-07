@@ -48,10 +48,7 @@ private int prox(int pos);
 Nesta pasta encontramos apenas uma classe chamada Movimento. Aqui é gerado o emulador do Cubo, apresentando o seu desenho através de um array bi-dimensional, analogo as seguintes imagens:
 
 
-![Screenshot](faces.jpeg)
-**_Enumeração das faces do cubo_**
-![Screenshot](subfaces.jpeg)
-**_Enumeração dos elementos de cada face do cubo_**
+![Screenshot](fsbf.png)
 
 Está classe contêm os seguintes métodos para a manipulação do objeto:
 
