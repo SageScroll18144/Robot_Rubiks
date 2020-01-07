@@ -412,7 +412,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(5, 4, 3).charAt(m.indexof(5, 4, 3).length()-1)) == 2
 				) {
 				//R U2 R' U' R U R'
-		}//R1	
+		}//R1	centro trocado
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 3 && 
@@ -430,7 +430,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(3, 5, 4).charAt(m.indexof(3, 5, 4).length()-1)) == 2
 				) {
 				//U L' U L U2 L' U L
-		}//R2
+		}//R2 centro trocado
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 3 && 
@@ -448,7 +448,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(3, 5, 4).charAt(m.indexof(3, 5, 4).length()-1)) == 2
 				) {
 				//U L' U' L Dw' L U L'
-		}//R3
+		}//R3 centro trocado
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 3 && 
@@ -466,7 +466,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(3, 5, 4).charAt(m.indexof(3, 5, 4).length()-1)) == 2
 				) {
 				//U' L' U L
-		}//R4
+		}//R4 centro trocado
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 3 && 
@@ -537,6 +537,23 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(3, 5, 4).charAt(m.indexof(3, 5, 4).length()-1)) == 2
 				) {
 				//R U R'
+		}//R8
+		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 3 && 
+				Integer.parseInt(String.valueOf(m.getPos(4, 4).charAt(m.getPos(4, 4).length()-1))) == 3 && 
+				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 3 && 
+				Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 3 &&
+				
+				Integer.parseInt(String.valueOf(m.getPos(3, 4).charAt(m.getPos(3, 4).length()-1))) == 5 && 
+				Integer.parseInt(String.valueOf(m.getPos(3, 5).charAt(m.getPos(3, 5).length()-1))) == 5 && 
+				Integer.parseInt(String.valueOf(m.getPos(3, 7).charAt(m.getPos(3, 7).length()-1))) == 5 && 
+				Integer.parseInt(String.valueOf(m.getPos(3, 8).charAt(m.getPos(3, 8).length()-1))) == 5 &&
+				
+				Integer.parseInt(String.valueOf(m.getPos(2, 1).charAt(m.getPos(2, 1).length()-1))) == 5 &&
+				
+				Character.getNumericValue(m.indexof(3, 5, 4).charAt(5)) == 4 &&
+				Character.getNumericValue(m.indexof(3, 5, 4).charAt(m.indexof(3, 5, 4).length()-1)) == 2
+				) {
+				//Dw R' U2 R U2 R' U R 
 		}
 		
 	}
