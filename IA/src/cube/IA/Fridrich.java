@@ -767,6 +767,10 @@ public class Fridrich {
 			//U' R U R' U2 R U' R'
 		}
 	}
+	/*
+	 * Terminando F2L
+	 * 
+	 */
 
 	
 }
