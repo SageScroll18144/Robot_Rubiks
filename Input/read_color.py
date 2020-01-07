@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+import imutils
 name = "I need see that color guy!"
 
 cam = cv2.VideoCapture(0)
@@ -13,6 +13,8 @@ greenUpper = (64, 255, 255)
 while(True):
     ret, frame = cam.read()
  	
+    frame = imutils.resize(frame, width=600)
+
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
     #construindo uma mascara para a cor
