@@ -45,7 +45,15 @@ private int prox(int pos);
 - A primeira etapa da Cruz Branca é colocar no lugar as peças das posições 1, 5, 7 e 3. Após colocar a peça no lugar o computador precisa saber qual será a próxima para não se perder na resolução. Informando a posição do atual elemento que acabou de ser colocado no lugar, este método retorna a posição do próximo canto para ser colocado o próximo elemento. 
 
 ## move
-Nesta pasta encontramos apenas uma classe chamada Movimento. Aqui é gerado o emulador do Cubo, apresentando o seu desenho através de um array bi-dimensional e contendo os seguintes métodos para a manipulação do objeto:
+Nesta pasta encontramos apenas uma classe chamada Movimento. Aqui é gerado o emulador do Cubo, apresentando o seu desenho através de um array bi-dimensional, analogo as seguintes imagens:
+
+
+![Screenshot](faces.jpeg)
+**_Enumeração das faces do cubo_**
+![Screenshot](subfaces.jpeg)
+**_Enumeração dos elementos de cada face do cubo_**
+
+Está classe contêm os seguintes métodos para a manipulação do objeto:
 
 ```
 public Movimento(int[][] lista);
@@ -108,6 +116,7 @@ public void moveAxisY();
 ```
 
 - Gira o cubo no eixo Y positivo. 
+
 
 ## language
 Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
