@@ -19,24 +19,24 @@ Podemos definir este arquivo como o Main, nele foi escrito a implementação do 
 
 ### Também apresenta os seguintes métodos:
 
-```
+```java
 private int elementoAdjacente(int posElemento, Movimento f);
 ```
 
 - Retorna o elemento(cubinho) Adjacente do elemento informado.
 
-```
+```java
 private int FaceAdjacente(int posElemento);
 ```
 - Retorna a Face Adjacente do elemento(cubinho) informado.
 
-```
+```java
 private void alinhamento(Movimento f);
 ```
 
 - Alinha os cantos brancos. Cubinho Branco-Azul fica debaixo da face Azul; Cubinho Branco-Laranja fica debaixo da face Laranja; Cubinho Branco-Vermelho fica debaixo da face Vermelha; Cubinho Branco-Verde fica debaixo da face Verde.
 
-```
+```java
 private int prox(int pos);
 ```
 ![Screenshot](prox.jpeg)
@@ -51,17 +51,17 @@ Nesta pasta encontramos apenas uma classe chamada Movimento. Aqui é gerado o em
 
 Está classe contêm os seguintes métodos para a manipulação do objeto:
 
-```
+```java
 public Movimento(int[][] lista);
 ```
 - Método construtor da classe, recebe um array bi-dimensional do tipo inteiro que descreve o Cubo.
 
-```
+```java
 public void print();
 ```
 - Mostra no terminal a imagem que o cubo apresenta no presente momento.
 
-```
+```java
 public void spinRightFront(int face);
 ```
 - Realiza os seguintes giros:
@@ -69,7 +69,7 @@ public void spinRightFront(int face);
 ![Screenshot](MR.png)
 
 
-```
+```java
 public void spinLeftBack(int face);
 ```
 - Realiza os seguintes giros:
@@ -78,36 +78,36 @@ public void spinLeftBack(int face);
 
 ##### OBS: Neste projeto a String que representa o movimento segue a seguinte estrutura: FACE + SENTIDO_DO_MOVIMENTO. 'FACE' pode assumir como valor os elementos pertencentes ao conjunto {0,1,2,3,4,5}. 'SENTIDO_DO_MOVIMENTO' tem como valor R e L para movimentos realizados pelos respectivos métodos _spinRightFront(int face);_ e _spinLeftBack(int face);_ citados anteriormente.
 
-```
+```java
 public ArrayList<String> getMove();
 ```
 - Retorna um ArrayList do tipo String apresentando todos os movimentos apresentados desde o início até o fim dos movimentos.
 
-```
+```java
 public String indexof(int cubinho , int adjacente);
 ```
 
 - Retorna uma String com um texto informando a posição de algum cubinho que está presente em algum dos cantos do Cubo.
 
-```
+```java
 public String indexof(int cubinho, int adjacente_cima, int adjacente_ao_lado);
 ```
 
 - Retorna uma String com um texto informando a posição de algum cubinho que está presente em alguma das quinas do Cubo.
 
-```
+```java
 public String getPos(int face, int posicao);
 ```
 
 - Retorna uma String com um texto informando a cor do cubinho que está em determinada face e posição.
 
-```
+```java
 public void finishMove();
 ```
 
 - Deve ser chamado após o último movimento, pois indica que não há mais nenhum movimento para ser feito.
 
-```
+```java
 public void moveAxisY();
 ```
 
@@ -116,50 +116,50 @@ public void moveAxisY();
 ## language
 Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
 
-```
+```java
 private String TranslateToComputer(String moving);
 ```
 - Método que faz a tradução da notação do Cubo mágico para a notação deste projeto.
-```
+```java
 private String TranslateToCube(String moving);
 ```
 - Método que faz a tradução da notação do computador para a notação do Cubo mágico.
-```
+```java
 private void putElementInAListToComputer(String moving);
 ```
 - Põe o elemento traduzido da notação do Cubo mágico para a notação do computador em uma lista. 
-```
+```java
 private void putElementInAListToCube(String moving);
 ```
 - Põe o elemento traduzido da notação do computador para a notação do Cubo mágico em uma lista.
-```
+```java
 public String getTranslationToComputer(String moving);
 ```
 - Captura a tradução do elemento atual para a linguagem do computador. 
-```
+```java
 public String getTranslationToCube(String moving);
 ```
 - Captura a tradução do elemento atual para a linguagem do Cubo mágico. 
-```
+```java
 public ArrayList<String> getTranslationToComputer(ArrayList<String> moving);
 ```
 - Captura a tradução de um ArrayList para a linguagem do computador. 
-```
+```java
 public ArrayList<String> getTranslationToCube(ArrayList<String> moving);
 ```
 - Captura a tradução de um ArrayList para a linguagem do Cubo mágico.  
-```
+```java
 public ArrayList<String> getMoveToComputer();
 ```
 - Captura todos os movimentos na notação do computador.
-```
+```java
 public ArrayList<String> getMoveToCube();
 ```
 - Captura todos os movimentos na notação do Cubo mágico.
 
 ## communication
 Nesta pasta está contido a classe Writer que apresenta um único método estático chamado writer que recebe como argumentos um ArrayList correspondente aos movimentos realizados e envia os movimentos para um arquivo .txt
-```
+```java
 public static void writer(ArrayList<String> moves);
 ```
 ## test
