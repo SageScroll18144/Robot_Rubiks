@@ -24,7 +24,7 @@ public class Fridrich {
 	 */
 	
 	
-	public void F2L() {
+	private void F2L() {
 		
 		/*
 		 * OBS.: PARA OS CENTROS TROCADOS(FACES FRONTAIS), ADAPTAR O MOVIMENTO. POR ISSO NÃO FOI ESCRITO O ARRAY PARA ESTE TIPO DE CASO. 
@@ -60,7 +60,10 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 1	 				
 				) {		
 				//U' L' U L Dw R U' R'
-				//String[] solver = {"U'", "L'", "U", "L", "Dw", "R", "U'", "R'"};
+				//realizar movimento no eixo X positivo
+				String[] solver = {"U'", "L'", "U", "L", "Dw", "R", "U'", "R'"};
+				// movimentos do array
+				//realizar mov no eixo x negativo
 		}//Fd1
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 4 && 
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 5 &&
@@ -84,8 +87,10 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 6).charAt(m.getPos(3, 6).length()-1))) == center && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 4
 				) {
+			//x+
 				//L' U' L U L' U' L
-				
+				String[] solver = "L' U' L U L' U' L".split(" ");
+			//x-
 		}//Fd4
 		else if(Integer.parseInt(String.valueOf(m.getPos(3, 6).charAt(m.getPos(3, 6).length()-1))) == center && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 4 &&
@@ -118,6 +123,9 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == adj_center
 				) {
 				//L' U L U' L' U L
+			//x+
+				String[] solver = "L' U L U' L' U L".split(" ");
+				//x-
 		}//Rd4
 		else if(Integer.parseInt(String.valueOf(m.getPos(3, 6).charAt(m.getPos(3, 6).length()-1))) == 4 && 
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == adj_center &&
@@ -150,6 +158,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(adj_center, 4, center).charAt(m.indexof(adj_center, 4, center).length()-1)) == 2
 				) {
 				//L' U2 L U L' U' L
+				String[] solver = "L' U2 L U L' U' L".split(" ");
 		}//U4
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(5, center).length()-1)) == 1 &&
@@ -165,18 +174,21 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(2, 2).charAt(m.getPos(2, 2).length()-1))) == 4				
 				) {
 				//L' U2 L U' L' U L
+				String[] solver = "L' U2 L U' L' U L".split(" ");
 		}//U6
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 3 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(5, 3).length()-1)) == 1 &&
 				Integer.parseInt(String.valueOf(m.getPos(2, 0).charAt(m.getPos(2, 0).length()-1))) == 4
 				) {
 				//R U R' U R U' R'
+				String[] solver = "R U R' U R U' R'".split(" ");
 		}//U7 centro trocado
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 1 &&
 				Integer.parseInt(String.valueOf(m.getPos(2, 0).charAt(m.getPos(2, 0).length()-1))) == 4
 				) {
 				//L' U' L U' L' U L
+				String[] solver = "L' U' L U' L' U L".split(" ");
 		}//U8
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == center &&
 				Integer.parseInt(String.valueOf(m.getPos(2, 6).charAt(m.getPos(2, 6).length()-1))) == 4 &&				
@@ -184,6 +196,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 1
 				) {
 				//R U2 R' U R U' R'
+				String[] solver = "R U2 R' U R U' R'".split(" ");
 		}//U9 centro trocado
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 3 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 1 &&
@@ -192,6 +205,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(adj_center, 4, center).charAt(m.indexof(adj_center, 4, center).length()-1)) == 2
 				) {
 				//U2 L2 U2 L U L' U L2
+				String[] solver = "U2 L2 U2 L U L' U L2".split(" ");
 		}//U10
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 3 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 1 &&
@@ -200,6 +214,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(adj_center, 4, center).charAt(m.indexof(adj_center, 4, center).length()-1)) == 2
 				) {
 				//R U2 R' U' R U R'
+				String[] solver = "R U2 R' U' R U R'".split(" ");
 		}//R1	centro trocado
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 5 &&
@@ -208,6 +223,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//U L' U L U2 L' U L
+				String[] solver = "U L' U L U2 L' U L".split(" ");
 		}//R2 centro trocado
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 5 &&
@@ -216,6 +232,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//U L' U' L Dw' L U L'
+				String[] solver = "U L' U' L Dw' L U L'".split(" ");
 		}//R3 centro trocado
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 1 &&
@@ -224,6 +241,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//U' L' U L
+				String[] solver = "U' L' U L".split(" ");
 		}//R4 centro trocado
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 1 &&
@@ -232,6 +250,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//U L' U2 L Dw' L U L'
+				String[] solver = "U L' U2 L Dw' L U L'".split(" ");
 		}//R5
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 3 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 1 &&
@@ -239,7 +258,8 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
-				//U' R U' R' U R U R'
+				//R U' R' U Dw R' U' R
+				String[] solver = "R U' R' U Dw R' U' R".split(" ");
 		}//R6
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 3 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 1 &&
@@ -248,6 +268,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//U' R U' R' U R U R'
+				String[] solver = "U' R U' R' U R U R'".split(" ");
 		}//R7
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 1).charAt(m.getPos(2, 1).length()-1))) == center &&
 				
@@ -255,6 +276,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//R U R'
+				String[] solver = "R U R'".split(" ");
 		}//R8
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 1).charAt(m.getPos(2, 1).length()-1))) == adj_center &&
 				
@@ -262,6 +284,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//Dw R' U2 R U2 R' U R 
+				String[] solver = "Dw R' U2 R U2 R' U R".split(" ");
 		}//R9
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 3).charAt(m.getPos(2, 3).length()-1))) == center &&
 				
@@ -269,6 +292,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//U' R U R' U R U R'
+				String[] solver = "U' R U R' U R U R'".split(" ");
 		}//R10 centro trocado
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 3).charAt(m.getPos(2, 3).length()-1))) == adj_center &&
 				
@@ -276,6 +300,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(center, adj_center, 4).charAt(m.indexof(center, adj_center, 4).length()-1)) == 2
 				) {
 				//U L' U' L U2 L' U L
+				String[] solver = "U L' U' L U2 L' U L".split(" ");
 		}//F1
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 5 &&
@@ -284,6 +309,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 				//U' R U' R' U2 R U' R'
+				String[] solver = "U' R U' R' U2 R U' R'".split(" ");
 		}//F2
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 5 &&
@@ -292,6 +318,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//U' R U R' Dw R' U' R
+			String[] solver = "U' R U R' Dw R' U' R".split(" ");
 		}//F3
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 3 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 1 &&
@@ -300,6 +327,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//U R U' R'
+			String[] solver = "U R U' R'".split(" ");
 			
 		}//F4
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 3 &&
@@ -309,6 +337,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//U' R U2 R' Dw R' U' R
+			String[] solver = "U' R U2 R' Dw R' U' R".split(" ");
 		}//F5 centro trocado
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 1 &&
@@ -317,6 +346,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//L' U L U' Dw' L U L'
+			String[] solver = "L' U L U' Dw' L U L'".split(" ");
 		}//F6 centro trocado
 		else if(Character.getNumericValue(m.indexof(center, adj_center).charAt(5)) == 4 &&
 				Character.getNumericValue(m.indexof(center, adj_center).charAt(m.indexof(center, adj_center).length()-1)) == 1 &&
@@ -325,6 +355,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//U L' U L U' L' U' L
+			String[] solver = "U L' U L U' L' U' L".split(" ");
 		}//F7 centro trocado
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 3).charAt(m.getPos(2, 3).length()-1))) == adj_center &&
 		
@@ -332,6 +363,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//L' U' L
+			String[] solver = "L' U' L".split(" ");
 		}//F8 centro trocado
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 3).charAt(m.getPos(2, 3).length()-1))) == center &&
 		
@@ -339,6 +371,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//Dw' L U2 L' U2 L U' L'
+			String[] solver = "Dw' L U2 L' U2 L U' L'".split(" ");
 		}//F9 CENTRO TROCADO
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 1).charAt(m.getPos(2, 1).length()-1))) == adj_center &&
 		
@@ -346,6 +379,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//U L' U' L U' L' U' L
+			String[] solver = "U L' U' L U' L' U' L".split(" ");
 		}
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 1).charAt(m.getPos(2, 1).length()-1))) == center &&
 		
@@ -353,6 +387,7 @@ public class Fridrich {
 				Character.getNumericValue(m.indexof(4, center, adj_center).charAt(m.indexof(4, center, adj_center).length()-1)) == 2
 				) {
 			//U' R U R' U2 R U' R'
+			String[] solver = "U' R U R' U2 R U' R'".split(" ");
 		}
 		else {
 			m.spinRightFront(0);
