@@ -484,7 +484,7 @@ public class Movimento{
 			lista[5][quina[i+1]] = lista[5][quina[i]] - lista[5][quina[i+1]];
 			lista[5][quina[i]] = lista[5][quina[i]] - lista[5][quina[i+1]];
 		}
-    	//Face 0
+    	//Face 2
     	int[] canto0 = {3,7,5,1};
     	int[] quina0 = {6,8,2,0};
     	for (int i = 0; i < canto0.length - 1; i++) {
@@ -496,7 +496,16 @@ public class Movimento{
 			lista[2][quina0[i+1]] = lista[2][quina0[i]] - lista[2][quina0[i+1]];
 			lista[2][quina0[i]] = lista[2][quina0[i]] - lista[2][quina0[i+1]];
 		}
+    	//Face 0;1;4;3
+    	int[] faces = {0,1,4,3};
     	
+    	for (int i = 0; i < faces.length-1; i++) {
+			for (int j = 0; j < lista[faces[i]].length; j++) {
+				lista[faces[i]][j] += lista[faces[i+1]][j] ;
+				lista[faces[i+1]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
+				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
+			}
+		}
     	
     }
 }
