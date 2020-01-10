@@ -26,7 +26,7 @@ public class Horario {
 			 				  																  5,5,5}};  
 	       Movimento c = new Movimento(cubo);
 	    c.print();
-		c.moveAxisY();
+		c.moveAxisXNegative();
 		c.print();
 		//c.spinRightFront(1);
 		//c.spinLeftBack(3);

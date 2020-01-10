@@ -17,7 +17,7 @@ public class Teste{
         Movimento c = new Movimento(novo);
         c.print();
         System.out.println("-----------------------------------");
-        c.moveAxisY();
+        c.moveAxisXNegative();
         c.print();
        
         /* for (int i = 0; i < 3; i++) {
