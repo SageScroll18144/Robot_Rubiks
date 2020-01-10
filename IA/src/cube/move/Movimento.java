@@ -506,12 +506,13 @@ public class Movimento{
 				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
 			}
 		}
-    	
+    	move.add("x'");
     }
     public void moveAxisXPositive() {
     	for (int i = 0; i < 3; i++) {
     		moveAxisXNegative();
 		}
+    	move.add("x");
     }
     public void moveAxisYNegative() {
     	//Face 5
@@ -548,11 +549,12 @@ public class Movimento{
 				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
 			}
 		}
-    	
+    	move.add("y'");
     }
     public void moveAxisYPositive() {
     	for (int i = 0; i < 3; i++) {
     		moveAxisYNegative();
 		}
+    	move.add("y");
     }
 }

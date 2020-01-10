@@ -20,24 +20,24 @@ Podemos definir este arquivo como o Main, nele foi escrito a implementação do 
 ### Também apresenta os seguintes métodos:
 
 ```java
-private int elementoAdjacente(int posElemento, Movimento f);
+private static int elementoAdjacente(int posElemento, Movimento f);
 ```
 
 - Retorna o elemento(cubinho) Adjacente do elemento informado.
 
 ```java
-private int FaceAdjacente(int posElemento);
+private static int FaceAdjacente(int posElemento);
 ```
 - Retorna a Face Adjacente do elemento(cubinho) informado.
 
 ```java
-private void alinhamento(Movimento f);
+private static void alinhamento(Movimento f);
 ```
 
 - Alinha os cantos brancos. Cubinho Branco-Azul fica debaixo da face Azul; Cubinho Branco-Laranja fica debaixo da face Laranja; Cubinho Branco-Vermelho fica debaixo da face Vermelha; Cubinho Branco-Verde fica debaixo da face Verde.
 
 ```java
-private int prox(int pos);
+private static int prox(int pos);
 ```
 ![Screenshot](prox.jpeg)
 **_Posição dos elementos da Face_**
@@ -108,10 +108,34 @@ public void finishMove();
 - Deve ser chamado após o último movimento, pois indica que não há mais nenhum movimento para ser feito.
 
 ```java
-public void moveAxisY();
+public void moveAxisXPositive();
+```
+
+- Gira o cubo no eixo X positivo.
+
+```java
+public void moveAxisXNegative();
+```
+
+- Gira o cubo no eixo X negativo. 
+
+```java
+public void moveAxisYPositive();
 ```
 
 - Gira o cubo no eixo Y positivo. 
+
+```java
+public void moveAxisYNegative();
+```
+
+- Gira o cubo no eixo Y negativo. 
+
+```java
+public void moveAxisY();
+```
+
+- Gira o cubo em algum eixo. 
 
 ## language
 Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
