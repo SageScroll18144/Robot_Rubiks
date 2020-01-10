@@ -471,4 +471,31 @@ public class Movimento{
 		}
 		move.add("xy");
     }
+    public void moveAxisX() {
+    	//Face 5
+    	int[] canto = {1,5,7,3};
+    	int[] quina = {8,6,0,2};
+    	for (int i = 0; i < canto.length - 1; i++) {
+			lista[5][canto[i]] += lista[5][canto[i+1]];
+			lista[5][canto[i+1]] = lista[5][canto[i]] - lista[5][canto[i+1]];
+			lista[5][canto[i]] = lista[5][canto[i]] - lista[5][canto[i+1]];
+			
+			lista[5][quina[i]] += lista[5][quina[i+1]];
+			lista[5][quina[i+1]] = lista[5][quina[i]] - lista[5][quina[i+1]];
+			lista[5][quina[i]] = lista[5][quina[i]] - lista[5][quina[i+1]];
+		}
+    	//Face 0
+    	int[] canto0 = {3,7,5,1};
+    	int[] quina0 = {6,8,2,0};
+    	for (int i = 0; i < canto.length - 1; i++) {
+			lista[0][canto0[i]] += lista[0][canto0[i+1]];
+			lista[0][canto0[i+1]] = lista[0][canto0[i]] - lista[0][canto0[i+1]];
+			lista[0][canto0[i]] = lista[0][canto0[i]] - lista[0][canto0[i+1]];
+			
+			lista[0][quina0[i]] += lista[0][quina0[i+1]];
+			lista[0][quina0[i+1]] = lista[0][quina0[i]] - lista[0][quina0[i+1]];
+			lista[0][quina0[i]] = lista[0][quina0[i]] - lista[0][quina0[i+1]];
+		}
+    	
+    }
 }
