@@ -404,7 +404,7 @@ public class Movimento{
     public String getPos(int face, int posicao) {return "Nessa posição estar o cubinho de cor:\t" + String.valueOf(lista[face][posicao]);}
     public void finishMove() {move.add("end");}
     
-    public void moveAxisY() {
+    public void moveAxisZNegative() {
     	/*CÓPIAS*/
     	int[] copy = new int[9];
     	int[] copy1 = new int[9];
@@ -469,9 +469,15 @@ public class Movimento{
 			lista[5][i] = copy2[element];
 			element++;
 		}
-		move.add("xy");
+		move.add("z'");
     }
-    public void moveAxisXNegative() {
+    public void moveAxisZPositive() {
+    	for (int i = 0; i < 3; i++) {
+			moveAxisXNegative();
+		}
+    	move.add("z");
+    }
+    public void moveAxisYPositive() {
     	//Face 5
     	int[] canto = {1,5,7,3};
     	int[] quina = {8,6,0,2};
@@ -506,15 +512,15 @@ public class Movimento{
 				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
 			}
 		}
-    	move.add("x'");
-    }
-    public void moveAxisXPositive() {
-    	for (int i = 0; i < 3; i++) {
-    		moveAxisXNegative();
-		}
-    	move.add("x");
+    	move.add("y");
     }
     public void moveAxisYNegative() {
+    	for (int i = 0; i < 3; i++) {
+    		moveAxisYPositive();
+		}
+    	move.add("y'");
+    }
+    public void moveAxisXNegative() {
     	//Face 5
     	int[] canto = {1,5,7,3};
     	int[] quina = {8,6,0,2};
@@ -549,12 +555,12 @@ public class Movimento{
 				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
 			}
 		}
-    	move.add("y'");
+    	move.add("x'");
     }
-    public void moveAxisYPositive() {
+    public void moveAxisXPositive() {
     	for (int i = 0; i < 3; i++) {
-    		moveAxisYNegative();
+    		moveAxisXNegative();
 		}
-    	move.add("y");
+    	move.add("x");
     }
 }

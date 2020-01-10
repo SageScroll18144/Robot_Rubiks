@@ -132,10 +132,20 @@ public void moveAxisYNegative();
 - Gira o cubo no eixo Y negativo. 
 
 ```java
-public void moveAxisY();
+public void moveAxisZPositive();
 ```
 
-- Gira o cubo em algum eixo. 
+- Gira o cubo no eixo Z positivo. 
+
+```java
+public void moveAxisZNegative();
+```
+
+- Gira o cubo no eixo Z negativo. 
+
+![Screenshot](eixos.png)
+
+**_A imagem corresponde aos movimentos analogos aos seis últimos métodos. Vale observar que a notação destes métodos são iguais em linguagem de computador e de resolução do cubo mágico._**
 
 ## language
 Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
