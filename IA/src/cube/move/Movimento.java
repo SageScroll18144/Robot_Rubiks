@@ -513,4 +513,46 @@ public class Movimento{
     		moveAxisXNegative();
 		}
     }
+    public void moveAxisYNegative() {
+    	//Face 5
+    	int[] canto = {1,5,7,3};
+    	int[] quina = {8,6,0,2};
+    	for (int i = 0; i < canto.length - 1; i++) {
+			lista[3][canto[i]] += lista[3][canto[i+1]];
+			lista[3][canto[i+1]] = lista[3][canto[i]] - lista[3][canto[i+1]];
+			lista[3][canto[i]] = lista[3][canto[i]] - lista[3][canto[i+1]];
+			
+			lista[3][quina[i]] += lista[3][quina[i+1]];
+			lista[3][quina[i+1]] = lista[3][quina[i]] - lista[3][quina[i+1]];
+			lista[3][quina[i]] = lista[3][quina[i]] - lista[3][quina[i+1]];
+		}
+    	//Face 2
+    	int[] canto0 = {3,7,5,1};
+    	int[] quina0 = {6,8,2,0};
+    	for (int i = 0; i < canto0.length - 1; i++) {
+			lista[1][canto0[i]] += lista[1][canto0[i+1]];
+			lista[1][canto0[i+1]] = lista[1][canto0[i]] - lista[1][canto0[i+1]];
+			lista[1][canto0[i]] = lista[1][canto0[i]] - lista[1][canto0[i+1]];
+			
+			lista[1][quina0[i]] += lista[1][quina0[i+1]];
+			lista[1][quina0[i+1]] = lista[1][quina0[i]] - lista[1][quina0[i+1]];
+			lista[1][quina0[i]] = lista[1][quina0[i]] - lista[1][quina0[i+1]];
+		}
+    	//Face 0;1;4;3
+    	int[] faces = {5,4,2,0};
+    	
+    	for (int i = 0; i < faces.length-1; i++) {
+			for (int j = 0; j < lista[faces[i]].length; j++) {
+				lista[faces[i]][j] += lista[faces[i+1]][j] ;
+				lista[faces[i+1]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
+				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
+			}
+		}
+    	
+    }
+    public void moveAxisYPositive() {
+    	for (int i = 0; i < 3; i++) {
+    		moveAxisYNegative();
+		}
+    }
 }
