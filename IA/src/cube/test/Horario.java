@@ -33,7 +33,7 @@ public class Horario {
 		//c.spinRightFront(2);
 		//c.spinRightFront(0);
 		//c.print();
-		//Send.send(c.getMove(), "/dev/ttyUSB0");
+		Send.send(c.getMove(), "/dev/ttyUSB0");
 		//Send.Listports();
 	}
 }

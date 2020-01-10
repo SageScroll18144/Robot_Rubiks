@@ -17,7 +17,20 @@ public class Teste{
         Movimento c = new Movimento(novo);
         c.print();
         System.out.println("-----------------------------------");
-        c.moveAxisXNegative();
+       /* c.moveAxisXNegative();
+        c.moveAxisXPositive();
+        c.moveAxisYNegative();
+        c.moveAxisYPositive();
+        c.moveAxisZPositive();
+        c.moveAxisZNegative();*/
+        c.spinLeftBack(2);
+        c.spinRightFront(2);
+       // c.spinRightFront(2);
+       // c.spinRightFront(2);
+        //c.spinRightFront(2);
+        //c.spinRightFront(2);
+        
+        System.out.println(c.getMove());
         c.print();
        
         /* for (int i = 0; i < 3; i++) {

@@ -226,9 +226,9 @@ public class Movimento{
 		
 	}
     public void spinLeftBack(int face) {
-    	sentido = 'L';
     	for (int i = 0; i < 3; i++) {spinRightFront(face);}
-    	
+    	ignoreMove();
+    	sentido = 'L';
     	move.add(String.valueOf(face)+String.valueOf(sentido)+ " ");
     }
     public ArrayList<String> getMove(){
@@ -469,13 +469,14 @@ public class Movimento{
 			lista[5][i] = copy2[element];
 			element++;
 		}
-		move.add("z'");
+		move.add("z' ");
     }
     public void moveAxisZPositive() {
     	for (int i = 0; i < 3; i++) {
 			moveAxisXNegative();
 		}
-    	move.add("z");
+    	ignoreMove();
+    	move.add("z ");
     }
     public void moveAxisYPositive() {
     	//Face 5
@@ -512,13 +513,14 @@ public class Movimento{
 				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
 			}
 		}
-    	move.add("y");
+    	move.add("y ");
     }
     public void moveAxisYNegative() {
     	for (int i = 0; i < 3; i++) {
     		moveAxisYPositive();
 		}
-    	move.add("y'");
+    	ignoreMove();
+    	move.add("y' ");
     }
     public void moveAxisXNegative() {
     	//Face 5
@@ -555,12 +557,18 @@ public class Movimento{
 				lista[faces[i]][j] = lista[faces[i]][j] - lista[faces[i+1]][j];
 			}
 		}
-    	move.add("x'");
+    	move.add("x' ");
     }
     public void moveAxisXPositive() {
     	for (int i = 0; i < 3; i++) {
     		moveAxisXNegative();
 		}
-    	move.add("x");
+    	ignoreMove();
+    	move.add("x ");
+    }
+    private void ignoreMove() {
+    	for (int i = 0; i < 3; i++) {
+    		move.remove(move.get(move.size()-1));
+		}
     }
 }
