@@ -25,13 +25,14 @@ public class Horario {
 			 				  																  5,5,9,
 			 				  																  5,5,5}};  
 	       Movimento c = new Movimento(cubo);
-		
-		c.spinRightFront(1);
-		c.spinLeftBack(3);
-		c.spinRightFront(2);
-		//c.spinRightFront(0);
+		c.moveAxisXPositive();
 		c.print();
-		Send.send(c.getMove(), "/dev/ttyUSB0");
+		//c.spinRightFront(1);
+		//c.spinLeftBack(3);
+		//c.spinRightFront(2);
+		//c.spinRightFront(0);
+		//c.print();
+		//Send.send(c.getMove(), "/dev/ttyUSB0");
 		//Send.Listports();
 	}
 }

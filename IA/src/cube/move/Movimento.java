@@ -471,7 +471,7 @@ public class Movimento{
 		}
 		move.add("xy");
     }
-    public void moveAxisX() {
+    public void moveAxisXNegative() {
     	//Face 5
     	int[] canto = {1,5,7,3};
     	int[] quina = {8,6,0,2};
@@ -507,5 +507,10 @@ public class Movimento{
 			}
 		}
     	
+    }
+    public void moveAxisXPositive() {
+    	for (int i = 0; i < 3; i++) {
+    		moveAxisXNegative();
+		}
     }
 }
