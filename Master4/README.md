@@ -2,7 +2,7 @@
 
 Pasta que contêm todo o código do Arduino.
 
-##Master4
+## Master4
 O arquivo principal. Aqui ocorre a comunicação Serial com o Python e a troca de comandos para a resolução do Cubo Mágico.
 
 ## spin
