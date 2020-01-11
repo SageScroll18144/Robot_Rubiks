@@ -150,7 +150,7 @@ public void moveAxisZNegative();
 ```java
 private void ignoreMove();
 ```
-- Remove os três últimos elementos da lista.
+- Remove os três últimos elementos da lista dos movimentos.
 
 ## language
 Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
