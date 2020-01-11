@@ -42,7 +42,18 @@ void loop()
     Serial.println(motor);
     if(motor.equals("z'")){
       moveAxisZNegative();
+    }else if(motor.equals("z")){
+      moveAxisZPositive();
     }
+    else if(motor.equals("y'")){
+      moveAxisYNegative();
+    }else if(motor.equals("y")){
+      moveAxisYPositive();
+    }else if(motor.equals("x'")){
+      moveAxisXNegative();
+    }else if(motor.equals("x")){
+      moveAxisXPositive();
+    }   
     else if(motor.charAt(0) == '0'){
       spinh(0, motor.charAt(1));
     }
