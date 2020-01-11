@@ -50,7 +50,7 @@ void moveAxisZPositive(){
   motores[0] = copy[0];
   motores[4] = copy[4];
 }
-void moveAxisZPositive(){
+void moveAxisZNegative(){
   int elements[] = {5,3,2,1};
   for(int i = 0; i < sizeof(elements)/sizeof(int) - 1; i++){
     motores[elements[i]] += motores[elements[i+1]];
