@@ -84,19 +84,3 @@ void loop()
 
   count = true;
 }
-
-void spinh(int motor, char sentido){
-  //sentido horario
-  if(sentido == 'R'){
-    motores[motor].step(-600);
-  }
-  //sentido anti-horario
-  else if(sentido == 'L'){
-    motores[motor].step(600);
-  }
-  delay(500);
-}
-void trocaEixo(){
-  int elements[] = {0,2,3,5,4,1};
-  for(int i = 0; i < sizeof(motores)/sizeof(int); i++){motores[i] = copy[elements[i]];}
-}

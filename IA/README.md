@@ -147,6 +147,11 @@ public void moveAxisZNegative();
 
 **_A imagem corresponde aos movimentos analogos aos seis últimos métodos. Vale observar que a notação destes métodos são iguais em linguagem de computador e de resolução do cubo mágico._**
 
+```java
+private void ignoreMove();
+```
+- Remove os três últimos elementos da lista.
+
 ## language
 Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
 
