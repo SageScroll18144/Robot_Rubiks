@@ -15,7 +15,6 @@ Stepper motores[6] = {
   Stepper(stepsPerRevolution, 42,46,44,48)
   
 };
-
 Stepper copy[6] = {
 
   Stepper(stepsPerRevolution, 4,6,5,7),
@@ -41,8 +40,8 @@ void loop()
   if(Serial.available() > 0){ 
     motor = Serial.readString();
     Serial.println(motor);
-    if(motor.equals("xy")){
-      trocaEixo();
+    if(motor.equals("z'")){
+      moveAxisZNegative();
     }
     else if(motor.charAt(0) == '0'){
       spinh(0, motor.charAt(1));
