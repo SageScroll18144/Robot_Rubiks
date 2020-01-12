@@ -399,7 +399,7 @@ public class Fridrich {
 	 */
 	
 	/*
-	 * Gira o Cubo até que face amarela esteja de frente
+	 * Gira o Cubo até que face amarela esteja de frente(FACE 4)
 	 * 
 	 * 
 	 */
@@ -561,7 +561,7 @@ public class Fridrich {
 			//Rw' U2 R U R' U Rw
 		}
 		else {
-			m.moveAxisYNegative();
+			m.moveAxisZNegative();
 		}
 	}
 	
