@@ -803,6 +803,19 @@ public class Fridrich {
 				 
 				) {
 			//Rw' U' Rw U' R' U R U' R' U M U Rw
+		}//34
+		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
+				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
+				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
+				Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
+				
+				Integer.parseInt(String.valueOf(m.getPos(2, 6).charAt(m.getPos(2, 6).length()-1))) == 0 &&	
+				Integer.parseInt(String.valueOf(m.getPos(5, 1).charAt(m.getPos(5, 1).length()-1))) == 0 &&			
+				Integer.parseInt(String.valueOf(m.getPos(3, 3).charAt(m.getPos(3, 3).length()-1))) == 0 &&
+				Integer.parseInt(String.valueOf(m.getPos(3, 6).charAt(m.getPos(3, 6).length()-1))) == 0
+				 
+				) {
+			//R U R' U R U' R' U' R' F R F'
 		}
 		else {
 			m.moveAxisZNegative();
