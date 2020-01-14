@@ -1119,5 +1119,11 @@ public class Fridrich {
 			m.moveAxisZNegative();
 		}
 	}
-	
+
+	public void caseF2L() {
+		F2L();
+	}
+	public void caseOLL() {
+		OLL();
+	}
 }
