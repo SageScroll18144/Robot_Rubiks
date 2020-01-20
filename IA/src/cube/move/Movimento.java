@@ -626,11 +626,19 @@ public class Movimento{
     	moveAxisYNegative();
     	spinLeftBack(2);
     	moveAxisYPositive();
+    	move.add("Dw ");
     }
     public void moveDwNegative() {
     	moveAxisYPositive();
     	spinRightFront(2);
     	moveAxisYNegative();
+    	move.add("Dw' ");
+    }
+    public void moveDw2() {
+    	moveDw();
+    	moveAxisYNegative();
+    	moveDw();
+    	move.add("Dw2 ");
     }
     private void ignoreMove() {
     	for (int i = 0; i < 3; i++) {
