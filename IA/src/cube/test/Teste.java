@@ -12,7 +12,7 @@ public class Teste{
     
         int[][] novo = {{0,0,0,0,0,0,0,0,0},{1,1,1,1,1,1,1,1,1},{2,2,2,2,2,2,2,2,2},{3,3,3,3,3,3,3,3,3},{4,4,4,4,4,4,4,4,4},{5,5,5,5,5,5,5,5,5}};  
         
-        novo[1][6] = 9;
+     //   novo[1][6] = 9;
      
         Movimento c = new Movimento(novo);
         c.print();
@@ -23,13 +23,13 @@ public class Teste{
         c.moveAxisYPositive();
         c.moveAxisZPositive();
         c.moveAxisZNegative();*/
-        c.spinLeftBack(2);
-        c.spinRightFront(2);
+      //  c.spinLeftBack(2);
+       // c.spinRightFront(2);
        // c.spinRightFront(2);
        // c.spinRightFront(2);
         //c.spinRightFront(2);
         //c.spinRightFront(2);
-        
+        c.moveRw();
         System.out.println(c.getMove());
         c.print();
        
