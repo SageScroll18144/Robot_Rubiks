@@ -622,6 +622,12 @@ public class Movimento{
     	moveUw();
     	move.add("Uw2 ");
     }
+    public void moveDw() {
+    	moveAxisYNegative();
+    	spinLeftBack(2);
+    	moveAxisYPositive();
+    }
+    
     private void ignoreMove() {
     	for (int i = 0; i < 3; i++) {
     		move.remove(move.get(move.size()-1));
