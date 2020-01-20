@@ -569,37 +569,48 @@ public class Movimento{
     public void moveRw() {
     	moveAxisXPositive();
     	spinRightFront(1);
+    	moveAxisXNegative();
     }
     public void moveRwNegative(){
-    	moveRw();
+    	//moveRw();
+    	//moveAxisXNegative();
     	moveAxisXNegative();
+    	spinLeftBack(1);
+    	moveAxisXPositive();
     }
     public void moveRw2() {
     	moveRw();
+    	moveAxisXPositive();
     	moveRw();
     }
     public void moveLw() {
     	moveAxisXNegative();
     	spinLeftBack(3);
+    	moveAxisXPositive();
     } 
     public void moveLwNegative() {
     	moveAxisXPositive();
     	spinRightFront(3);
+    	moveAxisXNegative();
     }
     public void moveLw2() {
     	moveLw();
+    	moveAxisXPositive();
     	moveLw();
     }
     public void moveUw() {
     	moveAxisYPositive();
     	spinRightFront(5);
+    	moveAxisYNegative();
     }
     public void moveUwNegative() {
     	moveAxisYNegative();
     	spinLeftBack(5);
+    	moveAxisYPositive();
     }
     public void moveUw2() {
     	moveUw();
+    	moveAxisYPositive();
     	moveUw();
     }
     private void ignoreMove() {
