@@ -570,6 +570,7 @@ public class Movimento{
     	moveAxisXPositive();
     	spinRightFront(1);
     	moveAxisXNegative();
+    	move.add("Rw ");
     }
     public void moveRwNegative(){
     	//moveRw();
@@ -577,41 +578,49 @@ public class Movimento{
     	moveAxisXNegative();
     	spinLeftBack(1);
     	moveAxisXPositive();
+    	move.add("Rw' ");
     }
     public void moveRw2() {
     	moveRw();
     	moveAxisXPositive();
     	moveRw();
+    	move.add("Rw2 ");
     }
     public void moveLw() {
     	moveAxisXNegative();
     	spinLeftBack(3);
     	moveAxisXPositive();
+    	move.add("Lw ");
     } 
     public void moveLwNegative() {
     	moveAxisXPositive();
     	spinRightFront(3);
     	moveAxisXNegative();
+    	move.add("Lw' ");
     }
     public void moveLw2() {
     	moveLw();
     	moveAxisXPositive();
     	moveLw();
+    	move.add("Lw2 ");
     }
     public void moveUw() {
     	moveAxisYPositive();
     	spinRightFront(5);
     	moveAxisYNegative();
+    	move.add("Uw ");
     }
     public void moveUwNegative() {
     	moveAxisYNegative();
     	spinLeftBack(5);
     	moveAxisYPositive();
+    	move.add("Uw' ");
     }
     public void moveUw2() {
     	moveUw();
     	moveAxisYPositive();
     	moveUw();
+    	move.add("Uw2 ");
     }
     private void ignoreMove() {
     	for (int i = 0; i < 3; i++) {
