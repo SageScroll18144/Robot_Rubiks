@@ -24,7 +24,8 @@ public class Emulador {
 		System.out.print("Informe o movimento ou 'end' como valor para sair do programa.: ");
 		
 		String input;
-		
+		String a = s.nextLine();
+		System.out.println(ts.getTranslationToComputer(a)+"Jgugi");
 		if(answer.equals("1")) {
 			while(!"end".equals(input = s.nextLine())) {
 				if(Character.isDigit(input.charAt(0))) {
@@ -43,18 +44,7 @@ public class Emulador {
 		}else if(answer.equals("2")) {
 			while(!"end".equals(input = s.nextLine())) {
 				System.out.println(input);
-				String a = String.valueOf(input);
-				System.out.println(a);
-				System.out.println(ts.getTranslationToComputer(a));
-				if(input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || (input.length() > 1 && input.charAt(1) == 'w')) {
-					t.cases(input);
-				}else if(ts.getTranslationToComputer(input).charAt(1) == 'R'){
-					m.spinRightFront(Character.getNumericValue(ts.getTranslationToComputer(input).charAt(0)));
-				}else if(ts.getTranslationToComputer(input).charAt(1) == 'L') {
-					m.spinLeftBack(Character.getNumericValue(ts.getTranslationToComputer(input).charAt(0)));
-				}
-				m.print();
-				System.out.print("Informe o movimento ou 'end' como valor para sair do programa.: ");
+				System.out.println(ts.getTranslationToComputer(String.valueOf((char)((int)a.charAt(0)))));
 			}
 		}else {
 			System.err.println("Valor fora do bloco lógico");
