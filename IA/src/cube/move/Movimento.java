@@ -640,6 +640,12 @@ public class Movimento{
     	moveDw();
     	move.add("Dw2 ");
     }
+    public void moveFw() {
+    	moveAxisZPositive();
+    	spinLeftBack(0);
+    	moveAxisZNegative();
+    }
+    
     private void ignoreMove() {
     	for (int i = 0; i < 3; i++) {
     		move.remove(move.get(move.size()-1));
