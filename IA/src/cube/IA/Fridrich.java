@@ -4,18 +4,12 @@ import cube.move.Movimento;
 
 public class Fridrich {
 	
-	private int[][] cube = new int[6][9];
-	
-	public Fridrich(int[][] cube) {
-		for (int i = 0; i < cube.length; i++) {
-			for (int j = 0; j < cube[i].length; j++) {
-				this.cube[i][j] = cube[i][j]; 
-			}
-		}
+	Movimento m;
+	public Fridrich(Movimento m) {
+		this.m = m;
 	}
 	
 	// .... APLICAR A TROCA DE EIXO .....
-	Movimento m = new Movimento(cube);
 	
 	/*
 	 * OBS.: A COR DOS CUBINHOS NÃO MUDA. O QUE MUDA APENAS É O EIXO DO CUBO
