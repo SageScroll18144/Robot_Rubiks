@@ -634,6 +634,10 @@ public class Movimento{
     	moveAxisZPositive();
     	spinLeftBack(4);
     }
+    public void moveBw2() {
+    	moveBw();
+    	moveBw();
+    }
     private void ignoreMove() {
     	for (int i = 0; i < 3; i++) {
     		move.remove(move.get(move.size()-1));
