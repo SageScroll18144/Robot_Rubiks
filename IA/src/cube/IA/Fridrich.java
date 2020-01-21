@@ -1125,5 +1125,5 @@ public class Fridrich {
 	}
 	public void caseOLL() {
 		OLL();
-	}
+	} 
 }
