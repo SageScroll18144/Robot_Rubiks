@@ -473,7 +473,7 @@ public class Movimento{
     }
     public void moveAxisZPositive() {
     	for (int i = 0; i < 3; i++) {
-			moveAxisXNegative();
+			moveAxisZNegative();
 		}
     	ignoreMove();
     	move.add("z ");
@@ -643,6 +643,7 @@ public class Movimento{
     public void moveFw() {
     	moveAxisZPositive();
     	spinLeftBack(0);
+    	moveAxisZNegative();
     }
     public void moveFwNegative() {
     	moveAxisZNegative();
