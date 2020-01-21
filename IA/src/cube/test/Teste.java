@@ -29,7 +29,10 @@ public class Teste{
        // c.spinRightFront(2);
         //c.spinRightFront(2);
         //c.spinRightFront(2);
-        c.moveBw();
+        
+        
+        c.moveM();
+      //  c.moveAxisXNegative();
        // c.moveAxisZPositive();
         System.out.println(c.getMove());
         c.print();

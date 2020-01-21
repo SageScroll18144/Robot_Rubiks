@@ -639,9 +639,9 @@ public class Movimento{
     	moveBw();
     }
     public void moveM() {
-    	spinRightFront(1);
-    	spinRightFront(3);
     	moveAxisXNegative();
+    	spinLeftBack(1);
+    	spinLeftBack(3);  	
     }
     
     private void ignoreMove() {
