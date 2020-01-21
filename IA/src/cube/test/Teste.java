@@ -31,7 +31,7 @@ public class Teste{
         //c.spinRightFront(2);
         
         
-        c.moveMNegative();
+        c.moveS();
       //  c.moveAxisXNegative();
        // c.moveAxisZPositive();
         System.out.println(c.getMove());
