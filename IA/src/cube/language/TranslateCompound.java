@@ -4,7 +4,7 @@ import cube.move.Movimento;
 
 public class TranslateCompound {
 	
-	Movimento c;
+	private Movimento c;
 	
 	public TranslateCompound(Movimento c) {
 		this.c = c;

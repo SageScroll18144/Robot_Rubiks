@@ -41,7 +41,7 @@ public class Teste{
       //  c.moveAxisXNegative();
        // c.moveAxisZPositive();
         TranslateCompound t = new TranslateCompound(c);
-        t.cases("x");
+        t.cases("S");
         System.out.println(c.getMove());
         c.print();
        

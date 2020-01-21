@@ -4,7 +4,7 @@ import cube.move.Movimento;
 
 public class Fridrich {
 	
-	Movimento m;
+	private Movimento m;
 	public Fridrich(Movimento m) {
 		this.m = m;
 	}
