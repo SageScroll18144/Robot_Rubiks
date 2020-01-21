@@ -30,7 +30,11 @@ public class Teste{
         //c.spinRightFront(2);
         //c.spinRightFront(2);
         
-        
+        c.moveM();
+        c.moveM();
+        c.moveS();
+        c.moveS();
+        c.moveE();
         c.moveE();
       //  c.moveAxisXNegative();
        // c.moveAxisZPositive();
@@ -42,6 +46,7 @@ public class Teste{
             c.spinRightFront(5);
             c.spinRightFront(1);
             c.spinRightFront(3);
+        	
         	
 		}
         
