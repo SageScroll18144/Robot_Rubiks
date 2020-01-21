@@ -1,6 +1,7 @@
 package cube.test;
 
 
+import cube.language.TranslateCompound;
 import cube.move.Movimento;
 
 public class Teste{
@@ -29,15 +30,18 @@ public class Teste{
        // c.spinRightFront(2);
         //c.spinRightFront(2);
         //c.spinRightFront(2);
-        
+        /*
         c.moveM();
         c.moveM();
         c.moveS();
         c.moveS();
         c.moveE();
         c.moveE();
+        */
       //  c.moveAxisXNegative();
        // c.moveAxisZPositive();
+        TranslateCompound t = new TranslateCompound(c);
+        t.cases("x");
         System.out.println(c.getMove());
         c.print();
        
