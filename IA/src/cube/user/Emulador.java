@@ -54,7 +54,7 @@ public class Emulador {
 				System.out.print("Informe o movimento ou 'end' como valor para sair do programa.: ");
 			}
 		}else {
-			System.err.println("Valor fora do bloco lógico");
+			System.err.println("\nVALOR FORA DO BLOCO LÓGICO");
 		}
 		s.close();
 		System.out.println(m.getMove());

@@ -201,6 +201,10 @@ Nesta pasta está contido a classe Writer que apresenta um único método estát
 ```java
 public static void writer(ArrayList<String> moves);
 ```
+
+## user
+Nesta pasta encontramos o programa Emulator, que tem como objetivo demonstrar para o usuário o funcionamento do emulador do Cubo Mágico.
+
 ## test
 Apresenta apenas arquivos de testes.
 
