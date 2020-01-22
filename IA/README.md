@@ -198,7 +198,7 @@ public ArrayList<String> getMoveToCube();
 - Captura todos os movimentos na notação do Cubo mágico.
 
 ### TranslateCompound
-É importante lembrar que este arquivo é válido apenas para os movimentos compostos e não contêm uma tradução para a linguagem de máquina. Então o único método de manipulação nesta classe é passado como argumento o movimento e é aplicado diretamente o movimento no Cubo Mágico emulado.
+É importante lembrar que este arquivo é válido apenas para os movimentos compostos e movimentos de troca de eixos e não contêm uma tradução para a linguagem de máquina. Então o único método de manipulação nesta classe é passado como argumento o movimento e é aplicado diretamente o movimento no Cubo Mágico emulado.
 
 ```java
 public void cases(String input);
