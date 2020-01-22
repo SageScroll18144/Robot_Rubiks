@@ -153,8 +153,9 @@ private void ignoreMove();
 - Remove os três últimos elementos da lista dos movimentos.
 
 ## language
-Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e ela apresenta os seguintes métodos:
+Este pacote faz a tradução das notações do Cubo Rubik para a do projeto(computador). Contém a classe Translate e TranslateCompound e ambas  apresentam os seguintes métodos:
 
+### Translate
 ```java
 private String TranslateToComputer(String moving);
 ```
@@ -195,6 +196,13 @@ public ArrayList<String> getMoveToComputer();
 public ArrayList<String> getMoveToCube();
 ```
 - Captura todos os movimentos na notação do Cubo mágico.
+
+### TranslateCompound
+É importante lembrar que este arquivo é válido apenas para os movimentos compostos e não contêm uma tradução para a linguagem de máquina. Então o único método de manipulação nesta classe é passado como argumento o movimento e é aplicado diretamente o movimento no Cubo Mágico emulado.
+
+```java
+public void cases(String input);
+```
 
 ## communication
 Nesta pasta está contido a classe Writer que apresenta um único método estático chamado writer que recebe como argumentos um ArrayList correspondente aos movimentos realizados e envia os movimentos para um arquivo .txt
