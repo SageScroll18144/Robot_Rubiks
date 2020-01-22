@@ -148,6 +148,62 @@ public void moveAxisZNegative();
 **_A imagem corresponde aos movimentos analogos aos seis últimos métodos. Vale observar que a notação destes métodos são iguais em linguagem de computador e de resolução do cubo mágico._**
 
 ```java
+public void moveRw();
+```
+
+- Realiza o movimento Rw.
+
+```java
+public void moveRwNegative();
+```
+
+- Realiza o movimento Rw'.
+
+```java
+public void moveRw2();
+```
+
+- Realiza o movimento Rw2.
+
+```java
+public void moveLw();
+```
+
+- Realiza o movimento Lw.
+
+```java
+public void moveLwNegative();
+```
+
+- Realiza o movimento Lw'.
+
+```java
+public void moveLw2();
+```
+
+- Realiza o movimento Lw2.
+
+```java
+public void moveUw();
+```
+
+- Realiza o movimento Uw.
+
+```java
+public void moveUwNegative();
+```
+
+- Realiza o movimento Uw'.
+
+```java
+public void moveUw2();
+```
+
+- Realiza o movimento Uw2.
+
+![Screenshot](rluw.png)
+
+```java
 private void ignoreMove();
 ```
 - Remove os três últimos elementos da lista dos movimentos.
