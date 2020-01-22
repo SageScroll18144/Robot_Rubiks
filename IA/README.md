@@ -259,6 +259,46 @@ public void moveBw2();
 ![Screenshot](dfbw.png)
 
 ```java
+public void moveM();
+```
+
+- Realiza o movimento M.
+
+```java
+public void moveMNegative();
+```
+
+- Realiza o movimento M'.
+
+```java
+public void moveS();
+```
+
+- Realiza o movimento S.
+
+```java
+public void moveSNegative();
+```
+
+- Realiza o movimento S'.
+
+```java
+public void moveE();
+```
+
+- Realiza o movimento E.
+
+```java
+public void moveENegative();
+```
+
+- Realiza o movimento E'.
+
+![Screenshot](mse.png)
+
+**_As três últimas imagens correspondem aos movimentos compostos. Esses movimentos são resultados da combinação dos movimentos das faces com os de troca de eixos. Vale notar que não tem uma tradução direta para linguagem de computador._**
+
+```java
 private void ignoreMove();
 ```
 - Remove os três últimos elementos da lista dos movimentos.
