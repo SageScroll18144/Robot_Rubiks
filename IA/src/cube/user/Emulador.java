@@ -1,6 +1,5 @@
 package cube.user;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 import cube.move.Movimento;
