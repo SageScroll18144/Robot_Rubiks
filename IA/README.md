@@ -204,6 +204,61 @@ public void moveUw2();
 ![Screenshot](rluw.png)
 
 ```java
+public void moveDw();
+```
+
+- Realiza o movimento Dw.
+
+```java
+public void moveDwNegative();
+```
+
+- Realiza o movimento Dw'.
+
+```java
+public void moveDw2();
+```
+
+- Realiza o movimento Dw2.
+
+```java
+public void moveFw();
+```
+
+- Realiza o movimento Fw.
+```java
+public void moveFwNegative();
+```
+
+- Realiza o movimento Fw'.
+
+```java
+public void moveFw2();
+```
+
+- Realiza o movimento Fw2.
+
+```java
+public void moveBw();
+```
+
+- Realiza o movimento Bw.
+
+```java
+public void moveBwNegative();
+```
+
+- Realiza o movimento Bw'.
+
+```java
+public void moveBw2();
+```
+
+- Realiza o movimento Bw2.
+
+![Screenshot](dfbw.png)
+
+```java
 private void ignoreMove();
 ```
 - Remove os três últimos elementos da lista dos movimentos.
