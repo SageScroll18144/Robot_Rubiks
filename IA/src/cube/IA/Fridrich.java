@@ -1119,12 +1119,21 @@ public class Fridrich {
 		}
 	}
 
+	private void PLL() {
+		
+	}
+	
 	public void caseF2L() {
 		F2L();
 	}
 	public void caseOLL() {
 		OLL();
 	} 
+	
+	public void casePLL() {
+		
+	}
+	
 	private void performsMovements(String inputs) {
 		for (String input : inputs.split(" ")) {
 			if(input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || input.charAt(0) == 'M' || input.charAt(0) == 'S' ||input.charAt(0) == 'E' || (input.length() > 1 && input.charAt(1) == 'w')) {
