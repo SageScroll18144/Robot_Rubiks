@@ -5,11 +5,11 @@ Aqui encontramos os códigos referentes a Inteligência Artificial. Podemos enco
 ## IA
 Nesta pasta encontramos as seguintes classes principais:
 
-### CasosEspeciais:
+### CasosEspeciais
 
 Este código resolve o cubo mágico apenas para casos clássicos, tais como o Xadrez, Zig-Zag e dos Meios.
 
-### Fridrich:
+### Fridrich
 
 Está classe contêm a implementação do algoritmo de Fridrich com os casos F2L, OLL e PLL. A explicação do algoritmo pode ser encontrado no link a seguir: http://www.cubovelocidade.com.br/tutoriais/cubo-magico-avancado-apostila-metodo-fridrich.pdf 
 
@@ -56,7 +56,7 @@ private void performsMovements(String inputs);
 
 - Realiza os movimentos em cada caso.
 
-### IABasic:
+### IABasic
 
 Podemos definir este arquivo como o Main, nele foi escrito a implementação do algoritmo da Cruz Branca e é onde ocorre toda manipulação inicial do Cubo, desde a captura das faces até o envio dos movimentos para um arquivo .txt.
 
