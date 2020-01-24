@@ -410,7 +410,7 @@ Nesta pasta encontramos o programa Emulador, que tem como objetivo demonstrar pa
 Para executar o programa entre nessa pasta pelo terminal e execute o seguinte comando:
 
 ```sh
-./emulator.sh
+$ ./emulator.sh
 ```
 
 ## test
