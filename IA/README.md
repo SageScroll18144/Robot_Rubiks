@@ -405,7 +405,13 @@ public static void writer(ArrayList<String> moves);
 ```
 
 ## user
-Nesta pasta encontramos o programa Emulator, que tem como objetivo demonstrar para o usuário o funcionamento do emulador do Cubo Mágico.
+Nesta pasta encontramos o programa Emulador, que tem como objetivo demonstrar para o usuário o funcionamento do emulador do Cubo Mágico.
+
+Para executar o programa entre nessa pasta pelo terminal e execute o seguinte comando:
+
+```sh
+./emulator.sh
+```
 
 ## test
 Apresenta apenas arquivos de testes.
