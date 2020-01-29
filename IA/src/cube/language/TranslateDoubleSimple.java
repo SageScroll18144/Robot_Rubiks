@@ -19,7 +19,6 @@ public class TranslateDoubleSimple {
 		}else {
 			input = String.valueOf(inputs.charAt(0)) + String.valueOf(inputs.charAt(2));
 		}
-		System.out.println(input);
 		if(ts.getTranslationToComputer(languageCube[buscaBruta(input)]).charAt(1) == 'R'){
 			m.spinRightFront(Character.getNumericValue(ts.getTranslationToComputer(languageCube[buscaBruta(input)]).charAt(0)));
 			m.spinRightFront(Character.getNumericValue(ts.getTranslationToComputer(languageCube[buscaBruta(input)]).charAt(0)));

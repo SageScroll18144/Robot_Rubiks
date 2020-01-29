@@ -11,6 +11,7 @@ public class Fridrich {
 	private TranslateCompound t = new TranslateCompound(m);
 	private Translate ts = new Translate();
 	private TranslateDoubleSimple tds = new TranslateDoubleSimple(m);
+	
 	public Fridrich(Movimento m) {
 		this.m = m;
 	}

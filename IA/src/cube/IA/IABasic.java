@@ -136,7 +136,20 @@ public class IABasic {
 			quinas[i] = true;
 		}
 		//FRIDRICH
+		//face amarela até o centro
 		
+		while(!(f.getPos(4, 4).charAt(f.getPos(4, 4).length()-1) == '0')) {
+			f.moveAxisXNegative();
+		}
+		//F2L
+		
+		//Verificação para passar para o OLL
+		
+		//OLL
+		
+		//Verificação para passar para o PLL
+		
+		//PLL
 		
 		/**Fim da IA**/
 		

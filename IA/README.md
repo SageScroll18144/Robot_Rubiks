@@ -397,6 +397,12 @@ public ArrayList<String> getMoveToCube();
 ```java
 public void cases(String input);
 ```
+### TranslateDoubleSimple
+Esta classe realiza apenas uma tradução direta dos movimentos simples de duplos giros, como por exemplo: B2, L2, U2, R2, F2, D2, B2', L2', U2', R2', F2', D2'. Nela está contido apenas o método _cases_ que recebe como argumento uma String do movimento em notação de Cubo Mágico.
+
+```java
+public void cases(String input);
+```
 
 ## communication
 Nesta pasta está contido a classe Writer que apresenta um único método estático chamado writer que recebe como argumentos um ArrayList correspondente aos movimentos realizados e envia os movimentos para um arquivo .txt
