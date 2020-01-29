@@ -1188,7 +1188,7 @@ public class Fridrich {
 	} 
 	
 	public void casePLL() {
-		
+		PLL();
 	}
 	
 	private void performsMovements(String inputs) {
