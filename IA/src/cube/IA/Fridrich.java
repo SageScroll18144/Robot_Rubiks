@@ -70,7 +70,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 4
 				) {
 				//R2 U2 R' U' R U' R' U2 R'
-				String[] solver = "R2 U2 R' U' R U' R' U2 R'".split(" ");
+			performsMovements("R2 U2 R' U' R U' R' U2 R'");
 		}//Fd2
 		else if(Character.getNumericValue(m.indexof(adj_center, center).charAt(5)) == 4 && 
 				Character.getNumericValue(m.indexof(adj_center, center).charAt(m.indexof(adj_center, center).length()-1)) == 5 &&
@@ -414,7 +414,8 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 0).charAt(m.getPos(3, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(5, 2).charAt(m.getPos(5, 2).length()-1))) == 0
 		) {
-			//R U R' U R U2 R'			
+			//R U R' U R U2 R'
+			performsMovements("R U R' U R U2 R'");
 		}//2
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
@@ -426,6 +427,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(5, 0).charAt(m.getPos(5, 2).length()-1))) == 0
 				) {
 			//R' U' R U' R' U2 R
+			performsMovements("R' U' R U' R' U2 R");
 		}//3
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -438,6 +440,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(1, 8).charAt(m.getPos(1, 8).length()-1))) == 0
 				) {
 			//R U R' U R U' R' U R U2 R'
+			performsMovements("R U R' U R U' R' U R U2 R'");
 		}//4
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -450,6 +453,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(1, 8).charAt(m.getPos(1, 8).length()-1))) == 0
 				) {
 			//R U2 R2 U' R2 U' R2 U2 R
+			performsMovements("R U2 R2 U' R2 U' R2 U2 R");
 		}//5
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -462,6 +466,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 
 				) {
 			//R' F' L F R F' L' F
+			performsMovements("R' F' L F R F' L' F");
 		}//6
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -474,6 +479,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 
 				) {
 			//Rw U R U' L' U R' U'
+			performsMovements("Rw U R U' L' U R' U'");
 		}//7
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -486,6 +492,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 
 				) {
 			//R2 D' R U2 R' D R U2 R
+			performsMovements("R2 D' R U2 R' D R U2 R");
 		}//8
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -498,6 +505,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(5, 1).charAt(m.getPos(5, 1).length()-1))) == 0 
 				) {
 			//R U R' U' R' F R F'
+			performsMovements("R U R' U' R' F R F'");
 		}//9
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -510,6 +518,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(5, 1).charAt(m.getPos(5, 1).length()-1))) == 0 
 				) {
 			//F R U R' U' F'
+			performsMovements("F R U R' U' F'");
 		}//10
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
@@ -522,6 +531,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(1, 5).charAt(m.getPos(1, 5).length()-1))) == 0 
 				) {
 			//Fw R U R' U' Fw'
+			performsMovements("Fw R U R' U' Fw'");
 		}//11
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
@@ -534,6 +544,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 3).charAt(m.getPos(3, 3).length()-1))) == 0 
 				) {
 			//R' U' F' U F R
+			performsMovements("R' U' F' U F R");
 		}//12
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
@@ -546,6 +557,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 6).charAt(m.getPos(3, 3).length()-1))) == 0 
 				) {
 			//Rw U2 R' U' R U' Rw'
+			performsMovements("Rw U2 R' U' R U' Rw'");
 		}//13
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
@@ -558,6 +570,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 0).charAt(m.getPos(3, 0).length()-1))) == 0 
 				) {
 			//Rw' U2 R U R' U Rw
+			performsMovements("Rw' U2 R U R' U Rw");
 		}//14
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
@@ -570,6 +583,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 0).charAt(m.getPos(3, 0).length()-1))) == 0 
 				) {
 			//Rw U R' U R U2 Rw'
+			performsMovements("Rw U R' U R U2 Rw'");
 		}//15
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
@@ -582,6 +596,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 6).charAt(m.getPos(3, 6).length()-1))) == 0 
 				) {
 			//Rw' U' R U' R' U2 Rw
+			performsMovements("Rw' U' R U' R' U2 Rw");
 		}//16
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -594,6 +609,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 6).charAt(m.getPos(3, 6).length()-1))) == 0 
 				) {
 			//F U R U' R' U R U' R' F'
+			performsMovements("F U R U' R' U R U' R' F'");
 		}//17
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -606,6 +622,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 3).charAt(m.getPos(3, 3).length()-1))) == 0 
 				) {
 			//F R' F' R U R U' R'
+			performsMovements("F R' F' R U R U' R'");
 		}//18
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
@@ -618,6 +635,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 3).charAt(m.getPos(3, 3).length()-1))) == 0 
 				) {
 			//F R U R' U' R U R' U' F'
+			performsMovements("F R U R' U' R U R' U' F'");
 		}//19
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
@@ -631,6 +649,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 0).charAt(m.getPos(3, 0).length()-1))) == 0 
 				) {
 			//F' L' U' L U L' U' L U F
+			performsMovements("F' L' U' L U L' U' L U F");
 		}//20
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -643,6 +662,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 3).charAt(m.getPos(3, 3).length()-1))) == 0 
 				) {
 			//Rw' U2 R U R' U' R U R' U Rw
+			performsMovements("Rw' U2 R U R' U' R U R' U Rw");
 		}//21
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
@@ -655,6 +675,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 0).charAt(m.getPos(3, 0).length()-1))) == 0 
 				) {
 			//Rw U R' U R U' R'	U R U2 Rw'
+			performsMovements("Rw U R' U R U' R' U R U2 Rw'");
 		}//22
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
@@ -667,6 +688,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(2, 8).charAt(m.getPos(3, 0).length()-1))) == 0 
 				) {
 			//Rw U' Rw2 U Rw2 U Rw2 U' Rw
+			performsMovements("Rw U' Rw2 U Rw2 U Rw2 U' Rw");
 		}//23
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
@@ -679,6 +701,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(2, 8).charAt(m.getPos(3, 0).length()-1))) == 0 
 				) {
 			//Rw' U Rw2 U' Rw2' U' Rw2 U Rw'
+			performsMovements("Rw' U Rw2 U' Rw2' U' Rw2 U Rw'");
 		}//24
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
@@ -691,6 +714,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(5, 1).charAt(m.getPos(5, 1).length()-1))) == 0 
 				) {
 			//Rw U R' U' M U R U' R'
+			performsMovements("Rw U R' U' M U R U' R'");
 		}//25
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -703,6 +727,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(5, 1).charAt(m.getPos(5, 1).length()-1))) == 0 
 				) {
 			//R U R' U' M' U R U' Rw'
+			performsMovements("R U R' U' M' U R U' Rw'");
 		}//26
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
@@ -715,6 +740,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(5, 0).charAt(m.getPos(5, 0).length()-1))) == 0 
 				) {
 			//R U B' U' R' U R B R'
+			performsMovements("R U B' U' R' U R B R'");
 		}//27
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
@@ -727,6 +753,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(5, 0).charAt(m.getPos(5, 0).length()-1))) == 0 
 				) {
 			//R' U' F U R U' R' F' R
+			performsMovements("R' U' F U R U' R' F' R");
 		}//28
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -739,6 +766,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 3).charAt(m.getPos(3, 3).length()-1))) == 0 
 				) {
 			//L U2 L2 B L B' L U2' L'
+			performsMovements("L U2 L2 B L B' L U2' L'");
 		}//29
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
@@ -751,6 +779,7 @@ public class Fridrich {
 				Integer.parseInt(String.valueOf(m.getPos(3, 3).charAt(m.getPos(3, 3).length()-1))) == 0 
 				) {
 			//R' U' R' F R F' U R
+			performsMovements("R' U' R' F R F' U R");
 		}//30
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
@@ -763,6 +792,7 @@ public class Fridrich {
 				 
 				) {
 			//R U R2 U' R' F R U R U' F'
+			performsMovements("R U R2 U' R' F R U R U' F'");
 		}//31
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
@@ -776,6 +806,7 @@ public class Fridrich {
 				 
 				) {
 			//R' U2 R2 U R' U R U2 x' U' R' U x
+			performsMovements("R' U2 R2 U R' U R U2 x' U' R' U x");
 		}//32
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
@@ -789,6 +820,7 @@ public class Fridrich {
 				 
 				) {
 			//R U R' U R Dw' R U' R' F'
+			performsMovements("R U R' U R Dw' R U' R' F'");
 		}//33
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
@@ -802,6 +834,7 @@ public class Fridrich {
 				 
 				) {
 			//Rw' U' Rw U' R' U R U' R' U M U Rw
+			performsMovements("Rw' U' Rw U' R' U R U' R' U M U Rw");
 		}//34
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
@@ -815,6 +848,7 @@ public class Fridrich {
 				 
 				) {
 			//R U R' U R U' R' U' R' F R F'
+			performsMovements("R U R' U R U' R' U' R' F R F'");
 		}//35
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
@@ -828,6 +862,7 @@ public class Fridrich {
 				 
 				) {
 			//L' U' L U' L' U L U L F' L' F
+			performsMovements("L' U' L U' L' U L U L F' L' F");
 		}//36
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
@@ -841,6 +876,7 @@ public class Fridrich {
 				 
 				) {
 			//R' F R U R' F' R y' R U' R'
+			performsMovements("R' F R U R' F' R y' R U' R'");
 		}//37
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
@@ -854,6 +890,7 @@ public class Fridrich {
 				 
 				) {
 			//Rw U' Rw' U' Rw U Rw' y' R' U R
+			performsMovements("Rw U' Rw' U' Rw U Rw' y' R' U R");
 		}//38
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -867,6 +904,7 @@ public class Fridrich {
 				 
 				) {
 			//Rw U M U R' U' Rw U' Rw
+			performsMovements("Rw U M U R' U' Rw U' Rw");
 		}//39
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
@@ -880,6 +918,7 @@ public class Fridrich {
 				 
 				) {
 			//Lw' U' M U' L U Lw' U Lw
+			performsMovements("Lw' U' M U' L U Lw' U Lw");
 		}//40
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
@@ -893,6 +932,7 @@ public class Fridrich {
 				 
 				) {
 			//R' F R U R' U' F' U R
+			performsMovements("R' F R U R' U' F' U R");
 		}//41
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -906,6 +946,7 @@ public class Fridrich {
 				 
 				) {
 			//R B' R' U' R U B U' R'
+			performsMovements("R B' R' U' R U B U' R'");
 		}//42
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -919,6 +960,7 @@ public class Fridrich {
 				 
 				) {
 			//F R U R' U' F' y F R U R' U' F'
+			performsMovements("F R U R' U' F' y F R U R' U' F'");
 		}//43
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -932,6 +974,7 @@ public class Fridrich {
 				 
 				) {
 			//Rw U R' U R' F R F' R U2 Rw'
+			performsMovements("Rw U R' U R' F R F' R U2 Rw'");
 		}//44
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 1).charAt(m.getPos(4, 1).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -945,6 +988,7 @@ public class Fridrich {
 				 
 				) {
 			//R U R' U' R U' R' F' U' F R U R'
+			performsMovements("R U R' U' R U' R' F' U' F R U R'");
 		}//45
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 5).charAt(m.getPos(4, 5).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -958,6 +1002,7 @@ public class Fridrich {
 				 
 				) {
 			//Fw R U R2 U' R' U R2 U' R' Fw'
+			performsMovements("Fw R U R2 U' R' U R2 U' R' Fw'");
 		}//46
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -971,6 +1016,7 @@ public class Fridrich {
 				 
 				) {
 			//R U R' U R U2 R' F R U R' U' F'
+			performsMovements("R U R' U R U2 R' F R U R' U' F'");
 		}//47
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -984,6 +1030,7 @@ public class Fridrich {
 				 
 				) {
 			//R' U' R U' R' U2 R F R U R' U' F'
+			performsMovements("R' U' R U' R' U2 R F R U R' U' F'");
 		}//48
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 7).charAt(m.getPos(4, 7).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -997,6 +1044,7 @@ public class Fridrich {
 				 
 				) {
 			//R' U' R U Lw U' Lw' R' U' R U B
+			performsMovements("R' U' R U Lw U' Lw' R' U' R U B");
 		}//49
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 3).charAt(m.getPos(4, 3).length()-1))) == 0 &&
@@ -1010,6 +1058,7 @@ public class Fridrich {
 				 
 				) {
 			//R U R' U' R' F R2 U R' U' F'
+			performsMovements("R U R' U' R' F R2 U R' U' F'");
 		}//50
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
@@ -1023,6 +1072,7 @@ public class Fridrich {
 				 
 				) {
 			//Rw U R' U R U2 Rw2 U' R U' R' U2 Rw
+			performsMovements("Rw U R' U R U2 Rw2 U' R U' R' U2 Rw");
 		}//51
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 6).charAt(m.getPos(4, 6).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
@@ -1036,6 +1086,7 @@ public class Fridrich {
 				 
 				) {
 			//Rw U2 R' U' R U' Rw2 U2 R U R' U Rw
+			performsMovements("Rw U2 R' U' R U' Rw2 U2 R U R' U Rw");
 		}//52
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 7).charAt(m.getPos(2, 7).length()-1))) == 0  &&
 				Integer.parseInt(String.valueOf(m.getPos(1, 2).charAt(m.getPos(1, 2).length()-1))) == 0 &&
@@ -1048,6 +1099,7 @@ public class Fridrich {
 				 
 				) {
 			//R U2 R2' F R F' U2' R' F R F'
+			performsMovements("R U2 R2' F R F' U2' R' F R F'");
 		}//53 *
 		else if(Integer.parseInt(String.valueOf(m.getPos(2, 7).charAt(m.getPos(2, 7).length()-1))) == 0  &&
 				Integer.parseInt(String.valueOf(m.getPos(2, 8).charAt(m.getPos(2, 8).length()-1))) == 0 &&
@@ -1060,6 +1112,7 @@ public class Fridrich {
 				 
 				) {
 			//F R U R' U' S R U R' U' Fw'
+			performsMovements("F R U R' U' S R U R' U' Fw'");
 		}//54
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
 				
@@ -1073,6 +1126,7 @@ public class Fridrich {
 				 
 				) {
 			//Fw R U R' U' Fw' U' F R U R' U' F'
+			performsMovements("Fw R U R' U' Fw' U' F R U R' U' F'");
 		}//55
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 2).charAt(m.getPos(4, 2).length()-1))) == 0 &&
 				
@@ -1086,6 +1140,7 @@ public class Fridrich {
 				 
 				) {
 			//Fw R U R' U' Fw' U F R U R' U' F'
+			performsMovements("Fw R U R' U' Fw' U F R U R' U' F'");
 		}//56
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
@@ -1100,6 +1155,7 @@ public class Fridrich {
 				 
 				) {
 			//R U R' U R' F R F' U2 R' F R F'
+			performsMovements("R U R' U R' F R F' U2 R' F R F'");
 		}//57
 		else if(Integer.parseInt(String.valueOf(m.getPos(4, 8).charAt(m.getPos(4, 8).length()-1))) == 0 &&
 				Integer.parseInt(String.valueOf(m.getPos(4, 0).charAt(m.getPos(4, 0).length()-1))) == 0 &&
@@ -1113,6 +1169,7 @@ public class Fridrich {
 				 
 				) {
 			//M U R U R' U' M2 U R U' Rw'
+			performsMovements("M U R U R' U' M2 U R U' Rw'");
 		}
 		else {
 			m.moveAxisZNegative();
