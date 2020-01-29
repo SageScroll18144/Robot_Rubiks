@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import cube.move.Movimento;
 import cube.language.TranslateCompound;
+import cube.language.TranslateDoubleSimple;
 import cube.language.Translate;
 
 public class Emulador {
@@ -17,6 +18,7 @@ public class Emulador {
 		Movimento m = new Movimento(cube);
 		TranslateCompound t = new TranslateCompound(m);
 		Translate ts = new Translate();
+		TranslateDoubleSimple tds = new TranslateDoubleSimple(m);
 		Scanner s = new Scanner(System.in);
 
 		System.out.print("***EMULADOR DO CUBO MÁGICO!***\nInforme 1-Linguagem do Computador ou 2-Notação de Cubo Mágico.: ");
@@ -43,7 +45,10 @@ public class Emulador {
 			}
 		}else if(answer.equals("2")) {
 			while(!"end".equals(input = s.nextLine())) {
-				if(input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || input.charAt(0) == 'M' || input.charAt(0) == 'S' ||input.charAt(0) == 'E' || (input.length() > 1 && input.charAt(1) == 'w')) {
+				if(input.length() > 1 && input.charAt(1) == '2') {
+					tds.cases(input);
+				}
+				else if(input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || input.charAt(0) == 'M' || input.charAt(0) == 'S' ||input.charAt(0) == 'E' || (input.length() > 1 && input.charAt(1) == 'w')) {
 					t.cases(input);
 				}else if(ts.getTranslationToComputer(languageCube[buscaBruta(input)]).charAt(1) == 'R'){
 					m.spinRightFront(Character.getNumericValue(ts.getTranslationToComputer(languageCube[buscaBruta(input)]).charAt(0)));
