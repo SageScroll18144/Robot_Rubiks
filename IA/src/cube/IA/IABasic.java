@@ -141,11 +141,36 @@ public class IABasic {
 		while(!(f.getPos(4, 4).charAt(f.getPos(4, 4).length()-1) == '0')) {
 			f.moveAxisXNegative();
 		}
-		//F2L
-		
-		//Verificação para passar para o OLL
-		
+		//Init F2L
+	
+		/*ESCREVER O PRÉ OLL*/
+		f2l:
+		while(true) {
+			
+			if(1==1) {
+				break;
+			}
+			
+		}
 		//OLL
+		
+		int sum = 0;
+		oll:
+		while(true) {
+			
+			//F2L
+			
+			//Verificação para passar para o OLL
+			for (int i = 0; i < 9; i++) {
+				sum += Character.getNumericValue(f.getPos(4, i).charAt(f.getPos(4, i).length() -1));
+			}
+			if(sum == 0) {
+				break oll;
+			}
+			else {
+				sum = 0;
+			}
+		}
 		
 		//Verificação para passar para o PLL
 		
