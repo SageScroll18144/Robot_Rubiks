@@ -2,6 +2,7 @@ package cube.IA;
 
 import cube.language.Translate;
 import cube.language.TranslateCompound;
+import cube.language.TranslateDoubleSimple;
 import cube.move.Movimento;
 
 public class Fridrich {
@@ -9,7 +10,7 @@ public class Fridrich {
 	private Movimento m;
 	private TranslateCompound t = new TranslateCompound(m);
 	private Translate ts = new Translate();
-
+	private TranslateDoubleSimple tds = new TranslateDoubleSimple(m);
 	public Fridrich(Movimento m) {
 		this.m = m;
 	}
@@ -1193,7 +1194,9 @@ public class Fridrich {
 	
 	private void performsMovements(String inputs) {
 		for (String input : inputs.split(" ")) {
-			if((input.length()>1 && input.charAt(1) == '2') || input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || input.charAt(0) == 'M' || input.charAt(0) == 'S' ||input.charAt(0) == 'E' || (input.length() > 1 && input.charAt(1) == 'w')) {
+			if(input.length()>1 && input.charAt(1) == '2') {
+				tds.cases(input);
+			}else if(input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || input.charAt(0) == 'M' || input.charAt(0) == 'S' ||input.charAt(0) == 'E' || (input.length() > 1 && input.charAt(1) == 'w')) {
 				t.cases(input);
 			}else if(ts.getTranslationToComputer(input).charAt(1) == 'R'){
 				m.spinRightFront(Character.getNumericValue(ts.getTranslationToComputer(input).charAt(0)));
