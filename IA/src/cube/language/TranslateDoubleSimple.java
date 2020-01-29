@@ -14,7 +14,9 @@ public class TranslateDoubleSimple {
 	public void cases(String input) {
 		if(ts.getTranslationToComputer(input).charAt(1) == 'R'){
 			m.spinRightFront(Character.getNumericValue(ts.getTranslationToComputer(input).charAt(0)));
+			m.spinRightFront(Character.getNumericValue(ts.getTranslationToComputer(input).charAt(0)));
 		}else if(ts.getTranslationToComputer(input).charAt(1) == 'L') {
+			m.spinLeftBack(Character.getNumericValue(ts.getTranslationToComputer(input).charAt(0)));
 			m.spinLeftBack(Character.getNumericValue(ts.getTranslationToComputer(input).charAt(0)));
 		}
 	}
