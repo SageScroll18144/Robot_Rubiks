@@ -158,8 +158,6 @@ public class IABasic {
 		oll:
 		while(true) {
 			
-			//F2L
-			
 			//Verificação para passar para o OLL
 			for (int i = 0; i < 9; i++) {
 				sum += Character.getNumericValue(f.getPos(4, i).charAt(f.getPos(4, i).length() -1));
