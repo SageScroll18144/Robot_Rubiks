@@ -422,7 +422,7 @@ public class Fridrich {
 			performsMovements("U' R U R' U2 R U' R'");
 		}
 		else {
-			m.spinRightFront(0);
+			m.spinRightFront(2);
 		}
 	}
 	/*
