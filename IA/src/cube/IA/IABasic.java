@@ -192,7 +192,7 @@ public class IABasic {
 		pll:
 		while(true) {
 			//PLL			
-			
+			fridrich.casePLL();
 			//finalize!
 			for (int i = 0; i < cubinhos.length; i++) {
 				for (int j = 0; j < cubinhos[i].length; j++) {
