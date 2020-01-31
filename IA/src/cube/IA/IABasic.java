@@ -184,8 +184,37 @@ public class IABasic {
 			}
 		}
 		
+		//Init PLL
+		int[] sumPll = {0,0,0,0};
+		int[] faces = {2,1,5,3};//I'm looking at the face four!
+		int[][] cubinhos = {{6,7,8},{2,5,8},{0,1,2},{0,3,6}};
+		pll:
+		while(true) {
+			//PLL			
+			
+			//finalize!
+			for (int i = 0; i < cubinhos.length; i++) {
+				for (int j = 0; j < cubinhos[i].length; j++) {
+					sumPll[i] =  Character.getNumericValue(f.getPos(faces[i], cubinhos[i][j]).charAt(f.getPos(faces[i], cubinhos[i][j]).length() -1));
+				}
+				sumPll[i] = sumPll[i] / 3;
+			}
+			
+			//saida do loop infinito
+			trois:
+			for (int i = 0; i < sumPll.length; i++) {
+				if(sumPll[i] != faces[i]) {
+					break trois;
+				}else if(i == sumPll.length - 1) {
+					break pll;
+				}
+			}
+			//caso não ocorra a saida...
+			for (int i = 0; i < sumPll.length; i++) {
+				sumPll[i] = 0;
+			}
+		}
 		
-		//PLL
 		
 		/**Fim da IA**/
 		
