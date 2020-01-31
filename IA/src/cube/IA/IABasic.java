@@ -144,37 +144,26 @@ public class IABasic {
 		}
 		
 		//Init F2L
-		int[] colors = {0,0,0,0};
-		boolean[] states = {false, false, false, false};
-		int spin = 0;
+		int color = 0;
 		
 		f2l:
 		while(true) {
 			//F2L
 			
 			//Verificação para passar para o OLL
-			for (int i = 3; i < 9; i++) {
-				colors[spin] += Character.getNumericValue(f.getPos(4, i).charAt(f.getPos(4, i).length() -1));
+			for (int i = 0; i < 9; i++) {
+				color += Character.getNumericValue(f.getPos(5, i).charAt(f.getPos(5, i).length() -1));
 			}
-			if(colors[spin]/6 == Character.getNumericValue(f.getPos(4, 4).charAt(f.getPos(4, 4).length() -1))) {
-				states[spin]= true;
-				spin++;
-			}else {
-				colors[spin] = 0;
-			}
+			color = color / 9;
+			if(color == 4)
+				break f2l;
+			else
+				color = 0;
 			
-			f.moveAxisYNegative();
-			
-			um:
-			for (int i = 0; i < states.length; i++) {
-				if(states[i] == false) {
-					break um;
-				}
-				else if(i == states.length - 1) {
-					break f2l;
-				}
-			}
-			
+			//next face
+			if(f.getMove().get(f.getMove().size() - 1).charAt(0) != '2')
+				f.moveAxisYNegative();
+				
 		}
 		//OLL
 		
