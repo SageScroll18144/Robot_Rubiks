@@ -135,22 +135,44 @@ public class IABasic {
 			}
 			quinas[i] = true;
 		}
-		//FRIDRICH
-		//face amarela até encima
 		
+		/*****FRIDRICH*******/
+		
+		//face amarela até encima
 		while(!(f.getPos(2, 4).charAt(f.getPos(2, 4).length()-1) == '0')) {
 			f.moveAxisXNegative();
 		}
+		
 		//Init F2L
-	
-		/*ESCREVER O PRÉ OLL*/
+		int[] colors = {0,0,0,0};
+		boolean[] states = {false, false, false, false};
+		int spin = 0;
+		
 		f2l:
 		while(true) {
+			//F2L
 			
+			//Verificação para passar para o OLL
+			for (int i = 3; i < 9; i++) {
+				colors[spin] += Character.getNumericValue(f.getPos(4, i).charAt(f.getPos(4, i).length() -1));
+			}
+			if(colors[spin]/6 == Character.getNumericValue(f.getPos(4, 4).charAt(f.getPos(4, 4).length() -1))) {
+				states[spin]= true;
+				spin++;
+			}else {
+				colors[spin] = 0;
+			}
 			
-
-			if(1==1) {
-				break;
+			f.moveAxisYNegative();
+			
+			um:
+			for (int i = 0; i < states.length; i++) {
+				if(states[i] == false) {
+					break um;
+				}
+				else if(i == states.length - 1) {
+					break f2l;
+				}
 			}
 			
 		}
