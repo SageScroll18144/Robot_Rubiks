@@ -29,6 +29,7 @@ public class IABasic {
 	       
 		//introduz a lista capturada na classe Movimento
 		Movimento f = new Movimento(cubo);
+		Fridrich fridrich = new Fridrich(f);
 		/*f.spinRightFront(5);
 		f.spinRightFront(1);
 		f.print();*/
@@ -149,7 +150,7 @@ public class IABasic {
 		f2l:
 		while(true) {
 			//F2L
-			
+			fridrich.caseF2L();
 			//Verificação para passar para o OLL
 			for (int i = 0; i < 9; i++) {
 				color += Character.getNumericValue(f.getPos(5, i).charAt(f.getPos(5, i).length() -1));
@@ -171,7 +172,7 @@ public class IABasic {
 		oll:
 		while(true) {
 			//OLL
-			
+			fridrich.caseOLL();
 			//Verificação para passar para o PLL
 			for (int i = 0; i < 9; i++) {
 				sum += Character.getNumericValue(f.getPos(4, i).charAt(f.getPos(4, i).length() -1));
