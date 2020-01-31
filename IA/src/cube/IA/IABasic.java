@@ -165,11 +165,12 @@ public class IABasic {
 				f.moveAxisYNegative();
 				
 		}
-		//OLL
+		//Init OLL
 		
 		int sum = 0;
 		oll:
 		while(true) {
+			//OLL
 			
 			//Verificação para passar para o PLL
 			for (int i = 0; i < 9; i++) {
