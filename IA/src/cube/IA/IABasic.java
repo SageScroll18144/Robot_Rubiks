@@ -196,7 +196,7 @@ public class IABasic {
 			//finalize!
 			for (int i = 0; i < cubinhos.length; i++) {
 				for (int j = 0; j < cubinhos[i].length; j++) {
-					sumPll[i] =  Character.getNumericValue(f.getPos(faces[i], cubinhos[i][j]).charAt(f.getPos(faces[i], cubinhos[i][j]).length() -1));
+					sumPll[i] +=  Character.getNumericValue(f.getPos(faces[i], cubinhos[i][j]).charAt(f.getPos(faces[i], cubinhos[i][j]).length() -1));
 				}
 				sumPll[i] = sumPll[i] / 3;
 			}

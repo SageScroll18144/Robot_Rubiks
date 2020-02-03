@@ -1210,6 +1210,10 @@ public class Fridrich {
 	}
 
 	private void PLL() {
+		int centerOne;
+		int centerTwo;
+		int centerThree;
+		int centerFiver;
 		
 	}
 	
