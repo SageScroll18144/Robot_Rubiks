@@ -420,10 +420,10 @@ public class Fridrich {
 				) {
 			//U' R U R' U2 R U' R'
 			performsMovements("U' R U R' U2 R U' R'");
-		}
+		}/*
 		else {
 			m.spinRightFront(2);
-		}
+		}*/
 	}
 	/*
 	 * Terminando F2L

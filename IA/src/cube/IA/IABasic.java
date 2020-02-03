@@ -28,7 +28,7 @@ public class IABasic {
 		 int[][] novo = {{0,0,0,0,0,0,0,0,0},{1,1,1,1,1,1,1,1,1},{2,2,2,2,2,2,2,2,2},{3,3,3,3,3,3,3,3,3},{4,4,4,4,4,4,4,4,4},{5,5,5,5,5,5,5,5,5}};  
 	       
 		//introduz a lista capturada na classe Movimento
-		Movimento f = new Movimento(novo);
+		Movimento f = new Movimento(novo);//trocar depois pelo array cubo
 		Fridrich fridrich = new Fridrich(f);
 		/*f.spinRightFront(5);
 		f.spinRightFront(1);
@@ -151,6 +151,7 @@ public class IABasic {
 		
 		f2l:
 		while(true) {
+			int lenMove = f.getMove().size();
 			//F2L
 			fridrich.caseF2L();
 			//Verificação para passar para o OLL
@@ -163,8 +164,11 @@ public class IABasic {
 			else
 				color = 0;
 			
+			//same face, but the face two isn't equals
+			if(lenMove == f.getMove().size())
+				f.spinRightFront(2);
 			//next face
-			if(f.getMove().get(f.getMove().size() - 1).charAt(0) != '2')
+			else if(f.getMove().get(f.getMove().size() - 1).charAt(0) != '2')
 				f.moveAxisYNegative();
 				
 		}
