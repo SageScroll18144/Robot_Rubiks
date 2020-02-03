@@ -45,7 +45,10 @@ public class Emulador {
 			}
 		}else if(answer.equals("2")) {
 			while(!"end".equals(input = s.nextLine())) {
-				if(input.length() > 1 && input.charAt(1) == '2') {
+				if(input.charAt(input.length()-1) == '2' && (input.charAt(0) == 'M' || input.charAt(0) == 'S' || input.charAt(0) == 'E' || input.charAt(0) == 'x' ||input.charAt(0) == 'y'||input.charAt(0) == 'z')) {
+					t.cases(input.substring(0,input.length()-1));
+					t.cases(input.substring(0,input.length()-1));
+				}else if(input.length() > 1 && input.charAt(1) == '2') {
 					tds.cases(input);
 				}
 				else if(input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || input.charAt(0) == 'M' || input.charAt(0) == 'S' ||input.charAt(0) == 'E' || (input.length() > 1 && input.charAt(1) == 'w')) {
