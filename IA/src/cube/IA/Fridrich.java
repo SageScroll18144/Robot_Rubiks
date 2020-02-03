@@ -1242,6 +1242,14 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerOne
 				) {
 			//M2 U M2 U2 M2 U M2
+			
+		}//Caso Z
+		else if (Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerFive &&
+				Character.getNumericValue(m.getPos(1, 5).charAt(m.getPos(1, 5).length() -1)) == centerTwo &&
+				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerOne &&
+				Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerThree
+				) {
+			//M2 U M2 U M´ U2 M2 U2 M´ U2
 		}
 		
 	}
