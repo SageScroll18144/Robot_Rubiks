@@ -1269,6 +1269,20 @@ public class Fridrich {
 			
 		}
 		
+		//Caso Y
+		
+		//Caso E
+		else if(Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerFive &&
+				Character.getNumericValue(m.getPos(5, 0).charAt(m.getPos(5, 0).length() -1)) == centerTwo &&
+				Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerFive &&
+				Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerTwo
+				) {
+			//x' R U' R' D R U R' D' R U R' D R U' R' D' x
+			
+		}
+		
+		//Caso V
+		
 	}
 	
 	public void caseF2L() {
