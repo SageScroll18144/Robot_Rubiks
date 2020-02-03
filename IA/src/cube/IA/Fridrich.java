@@ -1331,7 +1331,10 @@ public class Fridrich {
 	
 	private void performsMovements(String inputs) {
 		for (String input : inputs.split(" ")) {
-			if(input.length()>1 && input.charAt(1) == '2') {
+			if(input.charAt(input.length()-1) == '2' && (input.charAt(1) == 'M' || input.charAt(1) == 'S' || input.charAt(1) == 'E' || input.charAt(1) == 'x' ||input.charAt(1) == 'y'||input.charAt(1) == 'z')) {
+				t.cases(input.substring(0,input.length()-1));
+				t.cases(input.substring(0,input.length()-1));
+			}else if(input.length()>1 && input.charAt(1) == '2') {
 				tds.cases(input);
 			}else if(input.charAt(0) == 'x' || input.charAt(0) == 'y' || input.charAt(0) == 'z' || input.charAt(0) == 'M' || input.charAt(0) == 'S' ||input.charAt(0) == 'E' || (input.length() > 1 && input.charAt(1) == 'w')) {
 				t.cases(input);
