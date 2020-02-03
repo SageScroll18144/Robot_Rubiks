@@ -14,7 +14,7 @@ public class IABasic {
 		int[][] cubo = new int[6][9];
 		@SuppressWarnings("resource")
 		Scanner s = new Scanner(System.in);
-		for (int i = 0; i < cubo.length; i++) {
+		/*for (int i = 0; i < cubo.length; i++) {
 			System.out.println("Digite os elementos da face " + i);
 			for (int j = 0; j < cubo[i].length; j+=3) {
 				String[] input = s.nextLine().split(" ");
@@ -24,11 +24,11 @@ public class IABasic {
 					}
 				}
 			}
-		}
-		 //int[][] novo = {{0,0,0,0,0,0,0,0,0},{1,1,1,1,1,1,1,1,1},{2,2,2,2,2,2,2,2,2},{3,3,3,3,3,3,3,3,3},{4,4,4,4,4,4,4,4,4},{5,5,5,5,5,5,5,5,5}};  
+		}*/
+		 int[][] novo = {{0,0,0,0,0,0,0,0,0},{1,1,1,1,1,1,1,1,1},{2,2,2,2,2,2,2,2,2},{3,3,3,3,3,3,3,3,3},{4,4,4,4,4,4,4,4,4},{5,5,5,5,5,5,5,5,5}};  
 	       
 		//introduz a lista capturada na classe Movimento
-		Movimento f = new Movimento(cubo);
+		Movimento f = new Movimento(novo);
 		Fridrich fridrich = new Fridrich(f);
 		/*f.spinRightFront(5);
 		f.spinRightFront(1);
@@ -136,6 +136,8 @@ public class IABasic {
 			}
 			quinas[i] = true;
 		}
+		System.err.println("CRUZ\n");
+		f.print();
 		
 		/*****FRIDRICH*******/
 		
@@ -166,6 +168,10 @@ public class IABasic {
 				f.moveAxisYNegative();
 				
 		}
+		
+		System.err.println("F2L\n");
+		f.print();
+		System.out.println(f.getMove());
 		//Init OLL
 		
 		int sum = 0;
@@ -184,6 +190,9 @@ public class IABasic {
 				sum = 0;
 			}
 		}
+		
+		System.err.println("OLL\n");
+		f.print();
 		
 		//Init PLL
 		int[] sumPll = {0,0,0,0};
@@ -216,11 +225,11 @@ public class IABasic {
 			}
 		}
 		
-		
 		/**Fim da IA**/
 		
-		//Manda para o python
+		System.err.println("PLL\n");
 		f.print();
+		//Manda para o python
 		Writer.writer(f.getMove());
 	}
 	private static int elementoAdjacente(int posElemento, Movimento f) {
