@@ -1210,10 +1210,19 @@ public class Fridrich {
 	}
 
 	private void PLL() {
-		int centerOne;
-		int centerTwo;
-		int centerThree;
-		int centerFiver;
+		int centerOne = Character.getNumericValue(m.getPos(1, 4).charAt(m.getPos(1, 4).length() -1));
+		int centerTwo = Character.getNumericValue(m.getPos(2, 4).charAt(m.getPos(2, 4).length() -1));
+		int centerThree = Character.getNumericValue(m.getPos(3, 4).charAt(m.getPos(3, 4).length() -1));
+		int centerFiver = Character.getNumericValue(m.getPos(5, 4).charAt(m.getPos(5, 4).length() -1));
+		
+		//Caso U horário
+		if(Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerOne &&
+				Character.getNumericValue(m.getPos(1, 5).charAt(m.getPos(1, 5).length() -1)) == centerTwo &&
+				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerThree
+				) {
+			//R' U R' U' R' U' R' U R U R2
+				
+		}
 		
 	}
 	
