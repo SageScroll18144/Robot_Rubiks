@@ -1213,7 +1213,7 @@ public class Fridrich {
 		int centerOne = Character.getNumericValue(m.getPos(1, 4).charAt(m.getPos(1, 4).length() -1));
 		int centerTwo = Character.getNumericValue(m.getPos(2, 4).charAt(m.getPos(2, 4).length() -1));
 		int centerThree = Character.getNumericValue(m.getPos(3, 4).charAt(m.getPos(3, 4).length() -1));
-		int centerFiver = Character.getNumericValue(m.getPos(5, 4).charAt(m.getPos(5, 4).length() -1));
+		int centerFive = Character.getNumericValue(m.getPos(5, 4).charAt(m.getPos(5, 4).length() -1));
 		
 		//Caso U horário
 		if(Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerOne &&
@@ -1228,6 +1228,20 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerOne
 				) {
 			//R2 U' R' U' R U R U R U' R
+		}
+		
+		//Caso A horário
+		
+		//Caso A anti-horário
+		
+		
+		//Caso H
+		else if (Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerOne &&
+				Character.getNumericValue(m.getPos(1, 5).charAt(m.getPos(1, 5).length() -1)) == centerThree &&
+				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerFive &&
+				Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerOne
+				) {
+			//M2 U M2 U2 M2 U M2
 		}
 		
 	}
