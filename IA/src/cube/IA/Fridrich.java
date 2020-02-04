@@ -1308,7 +1308,18 @@ public class Fridrich {
 		}
 		
 		//Caso V
-		
+		else if((Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerFive || Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerThree)&&
+				(Character.getNumericValue(m.getPos(1, 2).charAt(m.getPos(1, 2).length() -1)) == centerFive || Character.getNumericValue(m.getPos(1, 2).charAt(m.getPos(1, 2).length() -1)) == centerThree)&&
+				
+				(Character.getNumericValue(m.getPos(3, 6).charAt(m.getPos(3, 6).length() -1)) == centerOne || Character.getNumericValue(m.getPos(3, 6).charAt(m.getPos(3, 6).length() -1)) == centerTwo)&&
+				(Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerOne || Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerTwo)&&
+				
+				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerThree &&
+				Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerTwo
+				) {
+			//
+			
+		}
 		//Caso R1
 		else if(Character.getNumericValue(m.getPos(1, 2).charAt(m.getPos(1, 2).length() -1)) == centerThree &&
 				Character.getNumericValue(m.getPos(3, 0).charAt(m.getPos(3, 0).length() -1)) == centerOne &&
