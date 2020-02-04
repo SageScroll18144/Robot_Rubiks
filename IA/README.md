@@ -16,7 +16,7 @@ Está classe contêm a implementação do algoritmo de Fridrich com os casos F2L
 Os métodos a seguir estam presentes nessa classe:
 
 ```java
-private void F2L() ;
+private void F2L();
 ```
 
 - Apresenta os casos F2L.
@@ -58,7 +58,7 @@ private void performsMovements(String inputs);
 
 ### IABasic
 
-Podemos definir este arquivo como o Main, nele foi escrito a implementação do algoritmo da Cruz Branca e é onde ocorre toda manipulação inicial do Cubo, desde a captura das faces até o envio dos movimentos para um arquivo .txt.
+Podemos definir este arquivo como o Main, nele foi escrito a implementação do algoritmo da Cruz Branca e é onde ocorre toda manipulação inicial do Cubo, desde a captura das faces até a resolução do Cubo Mágico e o envio dos movimentos para um arquivo .txt.
 
 Aqui é encotrado os seguintes métodos:
 
@@ -86,6 +86,93 @@ private static int prox(int pos);
 **_Posição dos elementos da Face_**
 
 - A primeira etapa da Cruz Branca é colocar no lugar as peças das posições 1, 5, 7 e 3. Após colocar a peça no lugar o computador precisa saber qual será a próxima para não se perder na resolução. Informando a posição do atual elemento que acabou de ser colocado no lugar, este método retorna a posição do próximo canto para ser colocado o próximo elemento. 
+
+Na segunda etapa giramos o Cubo para ficar com a face amarela na face dois e implementamos o F2L.
+
+- F2L:
+
+```java
+f2l:
+while(true) {
+	int lenMove = f.getMove().size();
+	//F2L
+	fridrich.caseF2L();
+	//Verificação para passar para o OLL
+	for (int i = 0; i < 9; i++) {
+		color += Character.getNumericValue(f.getPos(5, i).charAt(f.getPos(5, i).length() -1));
+	}
+	color = color / 9;
+	if(color == 4)
+		break f2l;
+	else
+		color = 0;
+	
+	//same face, but the face two isn't equals
+	if(lenMove == f.getMove().size())
+		f.spinRightFront(2);
+	//next face
+	else if(f.getMove().get(f.getMove().size() - 1).charAt(0) != '2')
+		f.moveAxisYNegative();
+		
+}
+
+``` 
+
+Em seguida giramos a face amarela até a face quatro e continuamos com o algoritmo.
+
+- OLL:
+
+```java
+oll:
+while(true) {
+	int lenMove = f.getMove().size();
+	//OLL
+	fridrich.caseOLL();
+	//Verificação para passar para o PLL
+	for (int i = 0; i < 9; i++) {
+		sum += Character.getNumericValue(f.getPos(4, i).charAt(f.getPos(4, i).length() -1));
+	}
+	if(sum == 0) {
+		break oll;
+	}
+	else {
+		sum = 0;
+	}
+	if(lenMove == f.getMove().size())
+		f.moveAxisZNegative();
+}
+``` 
+
+- PLL:
+
+```java
+pll:
+while(true) {
+	//PLL			
+	fridrich.casePLL();
+	//finalize!
+	for (int i = 0; i < cubinhos.length; i++) {
+		for (int j = 0; j < cubinhos[i].length; j++) {
+			sumPll[i] +=  Character.getNumericValue(f.getPos(faces[i], cubinhos[i][j]).charAt(f.getPos(faces[i], cubinhos[i][j]).length() -1));
+		}
+		sumPll[i] = sumPll[i] / 3;
+	}
+	
+	//saida do loop infinito
+	trois:
+	for (int i = 0; i < sumPll.length; i++) {
+		if(sumPll[i] != faces[i]) {
+			break trois;
+		}else if(i == sumPll.length - 1) {
+			break pll;
+		}
+	}
+	//caso não ocorra a saida...
+	for (int i = 0; i < sumPll.length; i++) {
+		sumPll[i] = 0;
+	}
+}
+``` 
 
 ## move
 Nesta pasta encontramos apenas uma classe chamada Movimento. Aqui é gerado o emulador do Cubo, apresentando o seu desenho através de um array bi-dimensional, analogo as seguintes imagens:
@@ -423,4 +510,4 @@ $ ./emulator.sh
 Apresenta apenas arquivos de testes.
 
 ## cam
-Apresenta arquivos para captura das faces através de uma câmera(Obs.: Ainda não finalizado).
+Arquivos descontinuados pois a implementação da câmera foi feita em python utilizando técnicas de processamento de imagem com a biblioteca de visão computacional OpenCV.
