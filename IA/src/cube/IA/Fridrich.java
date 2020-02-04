@@ -1317,7 +1317,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerThree &&
 				Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerTwo
 				) {
-			//
+			//R' U R' Dw' R' F' R2 U' R' U R' F R F
 			
 		}
 		//Caso R1
@@ -1352,7 +1352,19 @@ public class Fridrich {
 				) {
 			//F2' L' U' Rw U2' Lw' U R' U' R2 x2
 		}
-		
+		//Caso N1
+		else if((Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerFive || Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerThree)&&
+				(Character.getNumericValue(m.getPos(1, 2).charAt(m.getPos(1, 2).length() -1)) == centerFive || Character.getNumericValue(m.getPos(1, 2).charAt(m.getPos(1, 2).length() -1)) == centerThree)&&
+				
+				(Character.getNumericValue(m.getPos(3, 6).charAt(m.getPos(3, 6).length() -1)) == centerOne || Character.getNumericValue(m.getPos(3, 6).charAt(m.getPos(3, 6).length() -1)) == centerTwo)&&
+				(Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerOne || Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerTwo)&&
+				
+				Character.getNumericValue(m.getPos(1, 5).charAt(m.getPos(1, 5).length() -1)) == centerThree &&
+				Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerOne
+				) {
+			//U' R' U L' U2 R U' L R' U L' U2 R U' L
+			
+		}
 	}
 	
 	public void caseF2L() {
