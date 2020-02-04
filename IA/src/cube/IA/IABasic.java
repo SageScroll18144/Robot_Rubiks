@@ -176,11 +176,16 @@ public class IABasic {
 		System.err.println("F2L\n");
 		f.print();
 		System.out.println(f.getMove());
+		
 		//Init OLL
+		while(!(f.getPos(4, 4).charAt(f.getPos(4, 4).length()-1) == '0')) {
+			f.moveAxisXNegative();
+		}		
 		
 		int sum = 0;
 		oll:
 		while(true) {
+			int lenMove = f.getMove().size();
 			//OLL
 			fridrich.caseOLL();
 			//Verificação para passar para o PLL
@@ -193,10 +198,13 @@ public class IABasic {
 			else {
 				sum = 0;
 			}
+			if(lenMove == f.getMove().size())
+				f.moveAxisZNegative();
 		}
 		
 		System.err.println("OLL\n");
 		f.print();
+		System.out.println(f.getMove());
 		
 		//Init PLL
 		int[] sumPll = {0,0,0,0};

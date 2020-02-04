@@ -420,10 +420,7 @@ public class Fridrich {
 				) {
 			//U' R U R' U2 R U' R'
 			performsMovements("U' R U R' U2 R U' R'");
-		}/*
-		else {
-			m.spinRightFront(2);
-		}*/
+		}
 	}
 	/*
 	 * Terminando F2L
@@ -1204,9 +1201,7 @@ public class Fridrich {
 			//M U R U R' U' M2 U R U' Rw'
 			performsMovements("M U R U R' U' M2 U R U' Rw'");
 		}
-		else {
-			m.moveAxisZNegative();
-		}
+		
 	}
 
 	private void PLL() {
