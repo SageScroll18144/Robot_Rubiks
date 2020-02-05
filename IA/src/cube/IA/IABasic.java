@@ -26,15 +26,19 @@ public class IABasic {
 			}
 		}*/
 		 int[][] novo = {{0,0,0,0,0,0,0,0,0},{1,1,1,1,1,1,1,1,1},{2,2,2,2,2,2,2,2,2},{3,3,3,3,3,3,3,3,3},{4,4,4,4,4,4,4,4,4},{5,5,5,5,5,5,5,5,5}};  
-	       
+		
 		//introduz a lista capturada na classe Movimento
 		Movimento f = new Movimento(novo);//trocar depois pelo array cubo
 		Fridrich fridrich = new Fridrich(f);
-		/*f.spinRightFront(5);
+		
+		/* Embaralha 
+		f.spinRightFront(2);
+		f.spinRightFront(5);
 		f.spinRightFront(1);
-		f.print();*/
-		
-		
+		//f.spinRightFront(0);
+		//f.spinRightFront(2);
+		*/
+		f.print();
 		
 		/**IA**/
 		
@@ -238,9 +242,10 @@ public class IABasic {
 		}
 		
 		/**Fim da IA**/
-		
+	
 		System.err.println("PLL\n");
 		f.print();
+		System.out.println(f.getMove());
 		//Manda para o python
 		Writer.writer(f.getMove());
 	}

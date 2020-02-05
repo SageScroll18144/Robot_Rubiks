@@ -92,6 +92,7 @@ Na segunda etapa giramos o Cubo para ficar com a face amarela na face dois e imp
 - F2L:
 
 ```java
+int color = 0;
 f2l:
 while(true) {
 	int lenMove = f.getMove().size();
@@ -123,6 +124,7 @@ Em seguida giramos a face amarela até a face quatro e continuamos com o algorit
 - OLL:
 
 ```java
+int sum = 0;
 oll:
 while(true) {
 	int lenMove = f.getMove().size();
@@ -146,6 +148,9 @@ while(true) {
 - PLL:
 
 ```java
+int[] sumPll = {0,0,0,0};
+int[] faces = {2,1,5,3};//I'm looking at the face four!
+int[][] cubinhos = {{6,7,8},{2,5,8},{0,1,2},{0,3,6}};
 pll:
 while(true) {
 	//PLL			
@@ -161,7 +166,7 @@ while(true) {
 	//saida do loop infinito
 	trois:
 	for (int i = 0; i < sumPll.length; i++) {
-		if(sumPll[i] != faces[i]) {
+		if(sumPll[i] != Character.getNumericValue(f.getPos(faces[i], 4).charAt(f.getPos(faces[i], 4).length() -1))) {
 			break trois;
 		}else if(i == sumPll.length - 1) {
 			break pll;
