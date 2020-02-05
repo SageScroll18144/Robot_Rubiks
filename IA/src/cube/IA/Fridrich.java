@@ -1217,6 +1217,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerThree
 				) {
 			//R' U R' U' R' U' R' U R U R2
+			performsMovements("R' U R' U' R' U' R' U R U R2");
 				
 		}//Caso U anti-horário
 		else if(Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerTwo &&
@@ -1224,6 +1225,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerOne
 				) {
 			//R2 U' R' U' R U R U R U' R
+			performsMovements("R2 U' R' U' R U R U R U' R");
 		}
 		
 		//Caso A horário
@@ -1237,6 +1239,7 @@ public class Fridrich {
 				(Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerThree || Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerFive) 		
 				) {
 			//x' L' U L' D2 L U' L' D2 L2 x
+			performsMovements("x' L' U L' D2 L U' L' D2 L2 x");
 		}
 		//Caso A anti-horário
 		else if((Character.getNumericValue(m.getPos(3, 6).charAt(m.getPos(3, 6).length() -1)) == centerTwo || Character.getNumericValue(m.getPos(3, 6).charAt(m.getPos(3, 6).length() -1)) == centerThree)&&
@@ -1249,6 +1252,7 @@ public class Fridrich {
 				(Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerOne || Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerFive) 		
 				) {
 			//x' R U' R D2 R' U R D2 R2 x
+			performsMovements("x' R U' R D2 R' U R D2 R2 x");
 		}
 		
 		//Caso H
@@ -1258,6 +1262,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerOne
 				) {
 			//M2 U M2 U2 M2 U M2
+			performsMovements("M2 U M2 U2 M2 U M2");
 			
 		}//Caso Z
 		else if (Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerFive &&
@@ -1266,6 +1271,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerThree
 				) {
 			//M2 U M2 U M´ U2 M2 U2 M´ U2
+			performsMovements("M2 U M2 U M´ U2 M2 U2 M´ U2");
 			
 		}//Caso T
 		else if(Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerOne &&
@@ -1274,6 +1280,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerTwo
 				) {
 			//R U R' U' R' F R2 U' R' U' R U R' F'
+			performsMovements("R U R' U' R' F R2 U' R' U' R U R' F'");
 			
 		}//Caso F
 		else if(Character.getNumericValue(m.getPos(2, 7).charAt(m.getPos(2, 7).length() -1)) == centerFive &&
@@ -1282,7 +1289,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerTwo
 				) {
 			//R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R
-			
+			performsMovements("R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R");
 		}
 		
 		//Caso Y
@@ -1296,6 +1303,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(1, 5).charAt(m.getPos(1, 5).length() -1)) == centerTwo
 				) {
 			//F R U' R' U' R U R' F' R U R' U' R' F R F'
+			performsMovements("F R U' R' U' R U R' F' R U R' U' R' F R F'");
 			
 		}
 		//Caso E
@@ -1305,7 +1313,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerTwo
 				) {
 			//x' R U' R' D R U R' D' R U R' D R U' R' D' x
-			
+			performsMovements("x' R U' R' D R U R' D' R U R' D R U' R' D' x");
 		}
 		
 		//Caso V
@@ -1319,7 +1327,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerTwo
 				) {
 			//R' U R' Dw' R' F' R2 U' R' U R' F R F
-			
+			performsMovements("R' U R' Dw' R' F' R2 U' R' U R' F R F");
 		}
 		//Caso R1
 		else if(Character.getNumericValue(m.getPos(1, 2).charAt(m.getPos(1, 2).length() -1)) == centerThree &&
@@ -1328,6 +1336,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerThree
 				) {
 			//L U2' L' U2 L F' L' U' L U L F L2 U
+			performsMovements("L U2' L' U2 L F' L' U' L U L F L2 U");
 			
 		}//Caso R2
 		else if(Character.getNumericValue(m.getPos(1, 2).charAt(m.getPos(1, 2).length() -1)) == centerThree &&
@@ -1336,6 +1345,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerOne
 				) {
 			//R' U2 R U2' R' F R U R' U' R' F' R2 U'
+			performsMovements("R' U2 R U2' R' F R U R' U' R' F' R2 U'");
 			
 		}//Caso J1
 		else if(Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerFive &&
@@ -1344,6 +1354,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 0).charAt(m.getPos(5, 0).length() -1)) == centerTwo
 				) {
 			//F2' R U Lw' U2 Rw U' L U L2 x2
+			performsMovements("F2' R U Lw' U2 Rw U' L U L2 x2");
 			
 		}//Caso J2
 		else if(Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerFive &&
@@ -1352,6 +1363,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerTwo
 				) {
 			//F2' L' U' Rw U2' Lw' U R' U' R2 x2
+			performsMovements("F2' L' U' Rw U2' Lw' U R' U' R2 x2");
 		}
 		//Caso N1
 		else if((Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerFive || Character.getNumericValue(m.getPos(2, 6).charAt(m.getPos(2, 6).length() -1)) == centerThree)&&
@@ -1364,6 +1376,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerOne
 				) {
 			//U' R' U L' U2 R U' L R' U L' U2 R U' L
+			performsMovements("U' R' U L' U2 R U' L R' U L' U2 R U' L");
 			
 		}
 		//Caso N2
@@ -1377,7 +1390,7 @@ public class Fridrich {
 				Character.getNumericValue(m.getPos(3, 3).charAt(m.getPos(3, 3).length() -1)) == centerOne
 				) {
 			//U L U' R U2 L' U R' L U' R U2 L' U R'
-			
+			performsMovements("U L U' R U2 L' U R' L U' R U2 L' U R'");
 		}
 		
 		//Caso G1
@@ -1395,6 +1408,7 @@ public class Fridrich {
 				(Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerOne || Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerFive) 		
 				) {
 			//R2' Uw R' U R' U' R Uw' R2 y' R' U R
+			performsMovements("R2' Uw R' U R' U' R Uw' R2 y' R' U R");
 		}
 		
 		//Caso G2
@@ -1412,6 +1426,7 @@ public class Fridrich {
 				(Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerOne || Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerFive) 		
 				) {
 			//R2 Uw' R U' R U R' Uw R2 y R U' R'
+			performsMovements("R2 Uw' R U' R U R' Uw R2 y R U' R'");
 		}
 		
 		//Caso G3
@@ -1429,6 +1444,7 @@ public class Fridrich {
 				(Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerOne || Character.getNumericValue(m.getPos(2, 8).charAt(m.getPos(2, 8).length() -1)) == centerFive) 		
 				) {
 			//R U R' y' R2 Uw' R U' R' U R' Uw R2
+			performsMovements("R U R' y' R2 Uw' R U' R' U R' Uw R2");
 		}
 		//Caso G4
 		else if(Character.getNumericValue(m.getPos(5, 1).charAt(m.getPos(5, 1).length() -1)) == centerOne &&
@@ -1445,6 +1461,7 @@ public class Fridrich {
 				(Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerOne || Character.getNumericValue(m.getPos(5, 2).charAt(m.getPos(5, 2).length() -1)) == centerFive) 		
 				) {
 			//R' U' R y R2' Uw R' U R U' R Uw' R2
+			performsMovements("R' U' R y R2' Uw R' U R U' R Uw' R2");
 		}
 	}
 	
