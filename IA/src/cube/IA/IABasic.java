@@ -225,7 +225,7 @@ public class IABasic {
 			//saida do loop infinito
 			trois:
 			for (int i = 0; i < sumPll.length; i++) {
-				if(sumPll[i] != faces[i]) {
+				if(sumPll[i] != Character.getNumericValue(f.getPos(faces[i], 4).charAt(f.getPos(faces[i], 4).length() -1))) {
 					break trois;
 				}else if(i == sumPll.length - 1) {
 					break pll;
